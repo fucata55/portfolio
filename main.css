@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
+    font-size: 18px;
     box-sizing: border-box;
     -webkit-margin-before: 0px;
     -webkit-margin-after: 0px;
@@ -17,10 +17,201 @@
     font-family: 'Merriweather', serif;
 }
 
-.title {
-    font-family: 'Archivo Narrow', sans-serif;
+section {
+    padding: 50px 50px;
+    border: 1px solid red;
 }
 
-img {
-    border: 1px solid;
+figure {
+    text-align: center;
+    */
+}
+
+div,
+figure {
+    margin: 10px
+}
+
+figure>p {
+    margin-top: 10px;
+    font-weight: 800
+}
+
+a {
+    cursor: pointer;
+}
+
+h1 {
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 100px;
+    font-weight: 900;
+    /*    margin: 0px 0px -30px 0px;*/
+    /*    height: 110px;*/
+    line-height: 100px;
+}
+
+h2 {
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 70px;
+    line-height: 70px;
+}
+
+h3 {
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 25px;
+    margin-bottom: 35px
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    font-weight: 600;
+}
+
+header {
+    text-align: center;
+}
+
+nav>ul>li {
+    display: inline-block;
+    margin: 10px 20px;
+    padding: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 30px
+}
+
+footer>a {
+    margin: 0px 10px;
+}
+
+button {
+    cursor: pointer;
+    height: 40px;
+    width: 90px;
+    border-radius: 5px;
+    border: 2px solid grey;
+    margin-top: 10px
+}
+
+.to-inline-block {
+    display: inline-block;
+}
+
+.description {
+    width: 575px;
+    vertical-align: top;
+}
+
+.my-photo {
+    width: 200px;
+    border-radius: 10px;
+}
+
+#landing {
+    height: 97vh;
+}
+
+#aboutMe {
+    height: 100vh;
+}
+
+#landing>div {
+    margin-top: 10%;
+}
+
+#aboutMe>div {
+    margin-top: 10%;
+}
+
+#skills {
+    text-align: center
+}
+
+#skills>h3 {
+    text-align: left
+}
+
+@media only screen and (max-width: 1380px) {
+    * {
+        font-size: 16px;
+    }
+    .project-container>div {
+        width: 47%
+    }
+    .project-image {
+        width: 100%;
+        height: 100%
+    }
+}
+
+@media only screen and (max-width: 1180px) {
+    * {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+    section {
+        padding: 50px 20px;
+    }
+    .description {
+        width: 47%
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    section {
+        padding: 50px 10px;
+    }
+    .project-container>div {
+        margin: 10px 0px;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    nav>ul>li {
+        display: block;
+        margin: 0px;
+        height: 25px
+    }
+    #landing {
+        height: 80vh
+    }
+    h1 {
+        font-size: 60px;
+        font-weight: 600;
+        line-height: 60px
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    * {
+        font-size: 15px;
+    }
+    section {
+        padding: 30px 15px
+    }
+    h2 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .description {
+        width: 95%;
+    }
+    .my-photo-container {
+        display: block;
+        text-align: center;
+    }
+    #aboutMe {
+        height: 130vh;
+    }
+    #aboutMe>div {
+        margin: 5% 0;
+    }
 }
