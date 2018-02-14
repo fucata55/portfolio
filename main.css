@@ -15,16 +15,15 @@
     -webkit-padding-start: 0px;
     -webkit-padding-end: 0px;
     font-family: 'Merriweather', serif;
+    line-height: 165%;
 }
 
 section {
     padding: 50px 50px;
-    border: 1px solid red;
 }
 
 figure {
     text-align: center;
-    */
 }
 
 div,
@@ -39,14 +38,26 @@ figure>p {
 
 a {
     cursor: pointer;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+p>a {
+    color: #0ca5e6
+}
+
+a:hover {
+    font-size: 110%
+}
+
+a:visited {
+    color: #0ca5e6
 }
 
 h1 {
     font-family: 'Archivo Narrow', sans-serif;
     font-size: 100px;
     font-weight: 900;
-    /*    margin: 0px 0px -30px 0px;*/
-    /*    height: 110px;*/
     line-height: 100px;
 }
 
@@ -82,7 +93,8 @@ nav>ul>li {
 
 footer {
     text-align: center;
-    padding: 30px
+    padding: 30px;
+    background-color: floralwhite;
 }
 
 footer>a {
@@ -92,10 +104,17 @@ footer>a {
 button {
     cursor: pointer;
     height: 40px;
-    width: 90px;
+    width: 120px;
     border-radius: 5px;
-    border: 2px solid grey;
-    margin-top: 10px
+    border: 2px solid #dad2fc;
+    margin-top: 10px;
+    background: linear-gradient(to top, #9088db, #c1b7f7);
+}
+
+button:hover {
+    height: 43px;
+    width: 128px;
+    border: 4px solid #dad2fc;
 }
 
 .to-inline-block {
@@ -112,12 +131,23 @@ button {
     border-radius: 10px;
 }
 
+.project-image {
+    border-radius: 5px;
+}
+
 #landing {
     height: 97vh;
+    background-color: #ffe4c6;
+}
+
+#projects,
+#recommendations {
+    background-color: #ffe4c6;
 }
 
 #aboutMe {
     height: 100vh;
+    background-color: floralwhite;
 }
 
 #landing>div {
@@ -129,7 +159,8 @@ button {
 }
 
 #skills {
-    text-align: center
+    text-align: center;
+    background-color: floralwhite;
 }
 
 #skills>h3 {
@@ -209,7 +240,7 @@ button {
         text-align: center;
     }
     #aboutMe {
-        height: 130vh;
+        height: 160vh;
     }
     #aboutMe>div {
         margin: 5% 0;
