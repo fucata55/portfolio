@@ -70,15 +70,16 @@ h2 {
 
 h3 {
     font-family: 'Archivo Narrow', sans-serif;
-    font-size: 25px;
-    margin-bottom: 35px
+    font-size: 40px;
+    margin-bottom: 35px;
 }
 
 h4 {
-    font-size: 20px;
+    font-size: 30px;
 }
 
 h5 {
+    font-size: 25px;
     font-weight: 600;
 }
 
@@ -107,15 +108,17 @@ button {
     height: 60px;
     width: 150px;
     border-radius: 5px;
-    border: 2px solid #dad2fc;
+    border: 3px solid #dad2fc;
     margin-top: 10px;
     background: linear-gradient(to top, #9088db, #c1b7f7);
 }
 
 button:hover {
-    height: 43px;
-    width: 128px;
-    border: 4px solid #dad2fc;
+    /*
+    height: 50px;
+    width: 140px;
+*/
+    border: 10px solid #9088db;
 }
 
 .to-inline-block {
@@ -175,6 +178,12 @@ button:hover {
         font-size: 20px;
         text-align: center;
     }
+    nav>ul>li {
+        height: 51px;
+        display: block;
+        padding: 0px;
+        margin: 0px;
+    }
     .project-image {
         width: 100%;
         height: 100%;
@@ -182,18 +191,9 @@ button:hover {
     .my-photo {
         width: 80%
     }
-    h3 {
-        font-size: 40px;
-    }
     #skills>h3 {
         text-align: center;
     }
-    /*
-    h2 {
-        font-size: 40px;
-        line-height: 40px;
-    }
-*/
     .description {
         width: 95%;
     }
@@ -209,20 +209,6 @@ button:hover {
     #aboutMe>div {
         margin: 5% 0;
     }
-    nav>ul>li {
-        display: block;
-        margin: 0px;
-    }
-    #landing {
-        /*                height: 80vh*/
-    }
-    /*
-    h1 {
-        font-size: 60px;
-        font-weight: 600;
-        line-height: 60px;
-    }
-*/
     section {
         padding: 50px 20px;
     }
@@ -230,11 +216,6 @@ button:hover {
         margin: 10px 0px;
         width: 100%;
     }
-    /*
-    .description {
-        width: 47%;
-    }
-*/
 }
 
 
