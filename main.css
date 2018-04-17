@@ -47,7 +47,7 @@ p>a {
 }
 
 a:hover {
-    text-decoration: underline
+    filter: brightness(85%)
 }
 
 a:visited {
@@ -113,11 +113,7 @@ button {
 }
 
 button:hover {
-    /*
-    height: 50px;
-    width: 140px;
-*/
-    border: 10px solid #9088db;
+    filter: brightness(85%);
 }
 
 .to-inline-block {
