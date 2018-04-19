@@ -27,3 +27,12 @@ $('.scroll-contact').click(function () {
         scrollTop: $('footer').offset().top
     }, 'slow');
 });
+
+$(document).ready(function () {
+    $('.slick-carousel').slick({
+        autoplay: true,
+        autoplaySpeed: 1600,
+        arrows: false,
+        dots: true
+    });
+});
