@@ -30,9 +30,9 @@ $('.scroll-contact').click(function () {
 
 $(document).ready(function () {
     $('.slick-carousel').slick({
-        autoplay: true,
-        autoplaySpeed: 1600,
         arrows: false,
-        dots: true
+//        autoplay: true,
+//        autoplaySpeed: 1600,
+//        dots: true
     });
 });
