@@ -31,8 +31,8 @@ $('.scroll-contact').click(function () {
 $(document).ready(function () {
     $('.slick-carousel').slick({
         arrows: false,
-//        autoplay: true,
-//        autoplaySpeed: 1600,
-//        dots: true
+        autoplay: true,
+        autoplaySpeed: 1600,
+        dots: true
     });
 });
