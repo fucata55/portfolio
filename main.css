@@ -90,16 +90,10 @@ header {
     text-align: center;
 }
 
-nav>ul>li {
-    display: inline-block;
-    margin: 10px 20px;
-    padding: 5px;
-}
-
 footer {
     text-align: center;
     padding: 30px;
-    background-color: floralwhite;
+    background-color: #fffaf0;
 }
 
 footer>a {
@@ -120,6 +114,40 @@ button:hover {
     filter: brightness(85%);
 }
 
+/*Navigation desktop here*/
+nav {
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+nav a {
+    float: left;
+    display: block;
+    height: 40px;
+    color: #000000;
+    text-align: center;
+    padding: 11px 16px;
+    text-decoration: none;
+    font-size: 1.02em;
+}
+
+nav a:hover {
+    background-color: #ffe4c696;
+    cursor: pointer;
+}
+
+.active {
+    background-color: #ffe4c6;
+}
+
+nav .icon {
+    display: none;
+}
+/*Navigation desktop above*/
+
 .to-inline-block {
     display: inline-block;
 }
@@ -139,7 +167,6 @@ button:hover {
 }
 
 #landing {
-    /*    height: 97vh;*/
     background-color: #ffe4c6;
 }
 
@@ -166,6 +193,23 @@ button:hover {
     text-align: left
 }
 
+@media only screen and (max-width: 600px) {
+    nav a:not(:first-child) {display: none;}
+    nav a.icon {
+        float: right;
+        display: block;
+    }
+    nav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    nav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
 @media only screen and (max-width: 980px) {
     * {
         text-align: center;
@@ -194,10 +238,6 @@ button:hover {
     button {
         height: 40px;
         width: 130px;
-    }
-    nav>ul>li {
-        display: block;
-/*        margin: -8px;*/
     }
     figure>img {
         width: 70%

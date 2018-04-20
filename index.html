@@ -25,22 +25,13 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li class='a'>
-                    <a class='scroll-about'>About</a>
-                </li>
-                <li class='a'>
-                    <a class='scroll-projects'>Projects</a>
-                </li>
-                <li class='a'>
-                    <a class='scroll-skills'>Skills</a>
-                </li>
-                <li class='a'>
-                    <a class='scroll-recommendations'>Recommendations</a>
-                </li>
-            </ul>
+    <header role='banner'>
+        <nav class="topnav" id="myTopnav" role='navigation'>
+            <a id='aboutNav' class="active">About</a>
+            <a id='projectsNav'>Projects</a>
+            <a id='SkillsNav'>Skills</a>
+            <a id='recommendationsNav'>Recommendations</a>
+            <a href="javascript:void(0);" class="icon" onclick="sandwhichNav()">&#9776;</a>
         </nav>
     </header>
     <main>

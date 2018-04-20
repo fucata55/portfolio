@@ -1,33 +1,28 @@
-$('.scroll-about').click(function () {
-    $('html,body').animate({
-        scrollTop: $('#aboutMe').offset().top
-    }, 'slow');
-});
+//Sandwhiching navigation bar
+let sandwhichNav = () => {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
 
-$('.scroll-projects').click(function () {
-    $('html,body').animate({
-        scrollTop: $('#projects').offset().top
-    }, 'slow');
-});
+let scroller = (button, sectionId) => {
+    $(`${button}`).click(() =>
+        $('html,body').animate({
+            scrollTop: $(`${sectionId}`).offset().top
+        }, 'slow')
+    )
+}
 
-$('.scroll-skills').click(function () {
-    $('html,body').animate({
-        scrollTop: $('#skills').offset().top
-    }, 'slow');
-});
+scroller('#aboutNav', '#aboutMe');
+scroller('#projectsNav', '#projects');
+scroller('#SkillsNav', '#skills');
+scroller('#recommendationsNav', '#recommendations');
+scroller('.scroll-contact', 'footer');
 
-$('.scroll-recommendations').click(function () {
-    $('html,body').animate({
-        scrollTop: $('#recommendations').offset().top
-    }, 'slow');
-});
-
-$('.scroll-contact').click(function () {
-    $('html,body').animate({
-        scrollTop: $('footer').offset().top
-    }, 'slow');
-});
-
+//Slick carousel
 $(document).ready(function () {
     $('.slick-carousel').slick({
         arrows: false,
