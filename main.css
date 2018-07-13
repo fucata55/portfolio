@@ -69,6 +69,7 @@ h2 {
     font-family: 'Archivo Narrow', sans-serif;
     font-size: 70px;
     line-height: 70px;
+    margin-bottom: 10px;
 }
 
 h3 {
@@ -96,25 +97,7 @@ footer {
     background-color: #fffaf0;
 }
 
-footer>a {
-    margin: 0px 10px;
-}
-
-button {
-    cursor: pointer;
-    height: 60px;
-    width: 150px;
-    border-radius: 5px;
-    border: 3px solid #dad2fc;
-    margin-top: 10px;
-    background: linear-gradient(to top, #9088db, #c1b7f7);
-}
-
-button:hover {
-    filter: brightness(85%);
-}
-
-/*Navigation desktop here*/
+/*Navigation desktop code starts here*/
 nav {
     position: fixed;
     z-index: 99;
@@ -139,14 +122,14 @@ nav a:hover {
     cursor: pointer;
 }
 
-.active {
+/* .active {
     background-color: #ffe4c6;
-}
+} */
 
 nav .icon {
     display: none;
 }
-/*Navigation desktop above*/
+/*Navigation code ends here*/
 
 .to-inline-block {
     display: inline-block;
@@ -155,6 +138,10 @@ nav .icon {
 .description {
     width: 575px;
     vertical-align: top;
+}
+
+.contact-link {
+    margin: 0px 10px;
 }
 
 .my-photo {
@@ -235,11 +222,9 @@ nav .icon {
     h5 {
         font-size: 16px;
     }
-    button {
-        height: 40px;
-        width: 130px;
+    section {
+        padding: 30px 10px;
     }
-    
     figure>img {
         width: 70%
     }
@@ -259,11 +244,8 @@ nav .icon {
     .my-photo-container {
         display: block;
     }
-    .contact-icon {
+    .contact-link>img {
         width: 30px;
-    }
-    section {
-        padding: 30px 10px;
     }
     .project-container>div {
         margin: 10px 0px;
