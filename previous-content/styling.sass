@@ -1,10 +1,14 @@
-// html 
-    // min-width: 300px
-//     display: grid
-//     grid-template-columns: auto 1fr auto
+body
+    display: grid
+    // grid colum 2 and 4 have max 250px assumming picture will stretch good until 70% + 500px of the screen
+    grid-template-columns: auto minmax(10px, 250px) minmax(260px, 70%) minmax(10px, 250px) auto
+
+main,
+footer
+    grid-column: 2 / 5
 
 a,
-li 
+li
     text-decoration: none
     list-style: none
 
@@ -26,16 +30,22 @@ nav
     background-size: cover
     background-position-x: center
     background-position-y: center
+    vertical-align: middle
     height: 100vh
     width: 100%
-    display: grid
-    grid-template-columns: minmax(10px, auto) minmax(260px, 40%) minmax(10px, auto)
+    display: grid 
+    grid-template-columns: minmax(10px, auto) minmax(260px, 70%) minmax(10px, auto)
     grid-template-rows: auto minmax(260px, 40%) auto 
 
-#heroContainer
-    grid-column: 2
-    grid-row: 2
+.main-container
+    grid-column: 2 / 3
+    grid-row: 2 / 3
+    vertical-align: middle
     text-align: center
 
+#heroImageContainer
+    margin: auto 
+
 #heroImage
-    width: 80%
+    width: 100%
+    max-width: 700px
