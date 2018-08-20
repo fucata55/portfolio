@@ -12,6 +12,7 @@ a,
 li {
   text-decoration: none;
   list-style: none;
+  color: white;
 }
 
 p {
@@ -57,9 +58,16 @@ nav li {
   padding: 10%;
   color: white;
 }
-.text-container p {
-  display: table-cell;
-  vertical-align: middle;
+
+.project {
+  width: 25%;
+  height: 100%;
+  position: absolute;
+  transition: width 1s, left 1s, z-index 0.5s;
+  z-index: 1;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 6fr 4fr;
 }
 
 #heroSection {
@@ -94,6 +102,16 @@ nav li {
   grid-auto-rows: 2fr 3fr;
   grid-gap: 10px;
 }
+#aboutSection .main-container .text-container {
+  display: table;
+  height: 100%;
+  padding: 10%;
+  color: white;
+}
+#aboutSection .main-container .text-container p {
+  display: table-cell;
+  vertical-align: middle;
+}
 
 #defaultPhoto {
   height: 100%;
@@ -119,6 +137,77 @@ nav li {
   grid-column: 3/4;
   grid-row: 2/3;
   background-color: #D34925;
+}
+
+#projectSection {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: minmax(10px, auto) minmax(260px, 70%) minmax(10px, auto);
+  grid-template-rows: auto minmax(400px, 70%) auto;
+}
+#projectSection .main-container {
+  position: relative;
+}
+#projectSection .text-container {
+  background-color: rgba(0, 0, 0, 0.8);
+  grid-column: 2/3;
+  visibility: hidden;
+}
+
+#gantt {
+  background-image: url("./images/Gantt-project.png");
+  left: 0%;
+}
+#gantt:hover {
+  left: 0%;
+  width: 100%;
+  z-index: 2;
+  filter: brightness(80%);
+}
+#gantt:hover .text-container {
+  visibility: visible;
+}
+
+#ppf {
+  background-image: url("./images/ProPlayersFoundation-project.png");
+  left: 25%;
+}
+#ppf:hover {
+  left: 0%;
+  width: 100%;
+  z-index: 2;
+  filter: brightness(80%);
+}
+#ppf:hover .text-container {
+  visibility: visible;
+}
+
+#ataNote {
+  background-image: url("./images/ataNote-project.png");
+  left: 50%;
+}
+#ataNote:hover {
+  left: 0%;
+  width: 100%;
+  z-index: 2;
+  filter: brightness(80%);
+}
+#ataNote:hover .text-container {
+  visibility: visible;
+}
+
+#exploRestaurant {
+  background-image: url("./images/explorestaurant-project.png");
+  left: 75%;
+}
+#exploRestaurant:hover {
+  left: 0%;
+  width: 100%;
+  z-index: 2;
+  filter: brightness(80%);
+}
+#exploRestaurant:hover .text-container {
+  visibility: visible;
 }
 
 /*# sourceMappingURL=secondary-style.css.map */
