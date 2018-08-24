@@ -1,6 +1,13 @@
 body {
   display: grid;
   grid-template-columns: auto minmax(10px, 250px) minmax(260px, 70%) minmax(10px, 250px) auto;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+}
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
 }
 
 main,
@@ -16,9 +23,35 @@ li {
   line-height: 1.5em;
 }
 
+p {
+  line-height: 1.7em;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  display: inline-block;
+}
+
+h1 {
+  font-size: 3em;
+  color: white;
+}
+@media screen and (max-width: 360px) {
+  h1 {
+    font-size: 2em;
+  }
+}
+
+h2 {
+  font-size: 2em;
+}
+
 h3 {
   grid-column: 2;
   text-align: center;
+  font-size: 1.5em;
 }
 
 header {
@@ -58,10 +91,7 @@ figure img {
 }
 
 figcaption {
-  position: absolute;
-  bottom: 0%;
-  right: 0%;
-  left: 0%;
+  color: white;
 }
 
 .main-container {
