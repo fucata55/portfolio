@@ -1,3 +1,7 @@
+$breakpoint-table: 768px
+$breakpoint-cell: 360px
+
+    
 =projectHoverEffect
     &:hover
         left: 0%
@@ -29,16 +33,20 @@ h3
 
 header
     position: absolute
-    left: 50%
+    width: 100%
 
 nav
-    position: relative
-    left: -50%
-    margin: 0 auto
+    margin-top: 10px
+    display: flex
+    justify-content: space-evenly
     text-align: center
-    background: 2px solid blue
     li
-        display: inline
+        display: inline-block
+        width: 60px
+        text-shadow: 0 0 5px black
+        img
+            width: 70%
+            margin-bottom: 10px
 
 figure
     position: relative 
