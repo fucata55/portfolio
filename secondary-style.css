@@ -123,6 +123,12 @@ figcaption {
   text-shadow: 0 0 5px black;
 }
 
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1em;
+}
+
 .main-container {
   grid-column: 2/3;
   grid-row: 2/3;
