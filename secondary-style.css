@@ -193,6 +193,13 @@ figcaption {
   }
 }
 @media screen and (max-width: 360px) {
+  #aboutSection {
+    grid-template-columns: auto 100% auto;
+    grid-template-rows: auto 100% auto;
+    padding: 0px;
+  }
+}
+@media screen and (max-width: 360px) {
   #aboutSection h3 {
     display: none;
   }
@@ -207,6 +214,13 @@ figcaption {
   #aboutSection .main-container {
     grid-template-columns: 2fr 3fr;
     grid-template-rows: 3fr 2fr 2fr;
+  }
+}
+@media screen and (max-width: 360px) {
+  #aboutSection .main-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 2fr 1fr 1fr;
+    grid-gap: 0px;
   }
 }
 #aboutSection .main-container .text-container {
@@ -233,6 +247,12 @@ figcaption {
     grid-row: 1/2;
   }
 }
+@media screen and (max-width: 360px) {
+  #photoContainer {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+}
 
 #aboutSoftwareContainer {
   grid-column: 2/4;
@@ -243,6 +263,11 @@ figcaption {
   #aboutSoftwareContainer {
     grid-column: 1/2;
     grid-row: 2/4;
+  }
+}
+@media screen and (max-width: 360px) {
+  #aboutSoftwareContainer {
+    grid-row: 2/3;
   }
 }
 
@@ -257,6 +282,12 @@ figcaption {
     grid-row: 2/3;
   }
 }
+@media screen and (max-width: 360px) {
+  #aboutBusinessContainer {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+}
 
 #aboutOtherContainer {
   grid-column: 3/4;
@@ -267,6 +298,12 @@ figcaption {
   #aboutOtherContainer {
     grid-column: 2/3;
     grid-row: 3/4;
+  }
+}
+@media screen and (max-width: 360px) {
+  #aboutOtherContainer {
+    grid-column: 1/2;
+    grid-row: 4/5;
   }
 }
 
