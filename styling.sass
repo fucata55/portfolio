@@ -7,6 +7,11 @@ $breakpoint-cell: 360px
         width: 100%
         z-index: 2
         filter: brightness(80%)
+        
+        @media screen and (max-width: $breakpoint-tablet)
+            height: 100%
+            top: 0%
+
         .text-container
             visibility: visible
 
@@ -137,6 +142,15 @@ figcaption
     display: grid
     grid-template-columns: 6fr 4fr
     overflow: hidden
+
+    @media screen and (max-width: $breakpoint-tablet)
+        width: 100%
+        height: 25%
+        transition: height 1s, top 1s, z-index 0.5s
+        grid-template-columns: 1fr
+        grid-template-rows: 4fr 3fr
+        display: grid
+        grid-template-rows: 5fr 5fr
 
 .contact-links-container
     margin-top: 1em
@@ -281,7 +295,7 @@ figcaption
     height: 100vh
     display: grid
     grid-template-columns: minmax(10px, auto) minmax(260px, 85%) minmax(10px, auto)
-    grid-template-rows: minmax(100px, 15%) minmax(400px, 75%) auto 
+    grid-template-rows: minmax(100px, 10%) minmax(400px, 75%) auto 
     border: 2px solid blue
 
     .main-container
@@ -291,26 +305,42 @@ figcaption
         background-color: rgba(0,0,0, 0.8)
         grid-column: 2 / 3
         visibility: hidden
+        
+        @media screen and (max-width: $breakpoint-tablet)
+            grid-row: 2 / 3
 
 #gantt
     background-image: url("./images/Gantt-project.png")
     left: 0%
     +projectHoverEffect
+    @media screen and (max-width: $breakpoint-tablet)
+        top: 0%
+        
 
 #ppf
     background-image: url("./images/ProPlayersFoundation-project.png")
     left: 25%
     +projectHoverEffect
+    @media screen and (max-width: $breakpoint-tablet)
+        left: 0%
+        top: 25%
+
 
 #ataNote
     background-image: url("./images/ataNote-project.png")
     left: 50%
     +projectHoverEffect
+    @media screen and (max-width: $breakpoint-tablet)
+        left: 0%
+        top: 50%
 
 #exploRestaurant
     background-image: url("./images/explorestaurant-project.png")
     left: 75%
     +projectHoverEffect
+    @media screen and (max-width: $breakpoint-tablet)
+        left: 0%
+        top: 75%
 
 #skillSection
     height: 100vh

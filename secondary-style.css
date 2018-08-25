@@ -143,6 +143,17 @@ figcaption {
   grid-template-columns: 6fr 4fr;
   overflow: hidden;
 }
+@media screen and (max-width: 768px) {
+  .project {
+    width: 100%;
+    height: 25%;
+    transition: height 1s, top 1s, z-index 0.5s;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr 3fr;
+    display: grid;
+    grid-template-rows: 5fr 5fr;
+  }
+}
 
 .contact-links-container {
   margin-top: 1em;
@@ -346,7 +357,7 @@ figcaption {
   height: 100vh;
   display: grid;
   grid-template-columns: minmax(10px, auto) minmax(260px, 85%) minmax(10px, auto);
-  grid-template-rows: minmax(100px, 15%) minmax(400px, 75%) auto;
+  grid-template-rows: minmax(100px, 10%) minmax(400px, 75%) auto;
   border: 2px solid blue;
 }
 #projectSection .main-container {
@@ -356,6 +367,11 @@ figcaption {
   background-color: rgba(0, 0, 0, 0.8);
   grid-column: 2/3;
   visibility: hidden;
+}
+@media screen and (max-width: 768px) {
+  #projectSection .text-container {
+    grid-row: 2/3;
+  }
 }
 
 #gantt {
@@ -368,8 +384,19 @@ figcaption {
   z-index: 2;
   filter: brightness(80%);
 }
+@media screen and (max-width: 768px) {
+  #gantt:hover {
+    height: 100%;
+    top: 0%;
+  }
+}
 #gantt:hover .text-container {
   visibility: visible;
+}
+@media screen and (max-width: 768px) {
+  #gantt {
+    top: 0%;
+  }
 }
 
 #ppf {
@@ -382,8 +409,20 @@ figcaption {
   z-index: 2;
   filter: brightness(80%);
 }
+@media screen and (max-width: 768px) {
+  #ppf:hover {
+    height: 100%;
+    top: 0%;
+  }
+}
 #ppf:hover .text-container {
   visibility: visible;
+}
+@media screen and (max-width: 768px) {
+  #ppf {
+    left: 0%;
+    top: 25%;
+  }
 }
 
 #ataNote {
@@ -396,8 +435,20 @@ figcaption {
   z-index: 2;
   filter: brightness(80%);
 }
+@media screen and (max-width: 768px) {
+  #ataNote:hover {
+    height: 100%;
+    top: 0%;
+  }
+}
 #ataNote:hover .text-container {
   visibility: visible;
+}
+@media screen and (max-width: 768px) {
+  #ataNote {
+    left: 0%;
+    top: 50%;
+  }
 }
 
 #exploRestaurant {
@@ -410,8 +461,20 @@ figcaption {
   z-index: 2;
   filter: brightness(80%);
 }
+@media screen and (max-width: 768px) {
+  #exploRestaurant:hover {
+    height: 100%;
+    top: 0%;
+  }
+}
 #exploRestaurant:hover .text-container {
   visibility: visible;
+}
+@media screen and (max-width: 768px) {
+  #exploRestaurant {
+    left: 0%;
+    top: 75%;
+  }
 }
 
 #skillSection {
