@@ -406,6 +406,7 @@ figcaption {
 @media screen and (max-width: 768px) {
   #gantt {
     top: 0%;
+    background-image: url("./images/Gantt-project-mobile.png");
   }
 }
 
@@ -432,6 +433,7 @@ figcaption {
   #ppf {
     left: 0%;
     top: 25%;
+    background-image: url("./images/ProPlayersFoundation-project-mobile.png");
   }
 }
 
@@ -458,6 +460,7 @@ figcaption {
   #ataNote {
     left: 0%;
     top: 50%;
+    background-image: url("./images/ataNote-project-mobile.png");
   }
 }
 
@@ -484,6 +487,7 @@ figcaption {
   #exploRestaurant {
     left: 0%;
     top: 75%;
+    background-image: url("./images/explorestaurant-project-mobile.png");
   }
 }
 
