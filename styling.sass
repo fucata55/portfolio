@@ -94,15 +94,16 @@ nav
     display: flex
     justify-content: space-evenly
     text-align: center
+    
     li
         display: inline-block
         width: 60px
+
         img
             width: 70%
             margin-bottom: 10px
 
 figure
-    // position: relative 
     display: inline-block
     background-image: url("./images/skills-background.png")
     background-size: cover
@@ -121,10 +122,6 @@ figure
     img
         width: 75%
         max-width: 130px
-        // position: absolute
-        // top: 50%
-        // margin-top: -32.5%
-        // margin-left: -32.5%
 
 figcaption
     color: white
@@ -137,14 +134,12 @@ footer
 
 .main-container
     grid-column: 2 / 3
-    //so far, only applies to .maincontainer inside hero section with yempleate rows
     grid-row: 2 / 3
     vertical-align: middle
     text-align: center
 
 .large-image
     width: 100%
-    // height: 100%
     object-fit: cover
 
 .text-container
@@ -333,6 +328,7 @@ footer
     background-image: url("./images/Gantt-project.png")
     left: 0%
     +projectHoverEffect
+
     @media screen and (max-width: $breakpoint-tablet)
         top: 0%
         background-image: url("./images/Gantt-project-mobile.png")
@@ -342,6 +338,7 @@ footer
     background-image: url("./images/ProPlayersFoundation-project.png")
     left: 25%
     +projectHoverEffect
+
     @media screen and (max-width: $breakpoint-tablet)
         left: 0%
         top: 25%
@@ -352,6 +349,7 @@ footer
     background-image: url("./images/ataNote-project.png")
     left: 50%
     +projectHoverEffect
+
     @media screen and (max-width: $breakpoint-tablet)
         left: 0%
         top: 50%
@@ -361,6 +359,7 @@ footer
     background-image: url("./images/explorestaurant-project.png")
     left: 75%
     +projectHoverEffect
+
     @media screen and (max-width: $breakpoint-tablet)
         left: 0%
         top: 75%
@@ -375,5 +374,3 @@ footer
     
     .main-container
         padding-top: 10%
-    // @media screen and (max-width: $breakpoint-cell)
-    //     height: 140vh
