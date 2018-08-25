@@ -229,6 +229,11 @@ figcaption {
   padding: 5%;
   color: white;
 }
+@media screen and (max-width: 360px) {
+  #aboutSection .main-container .text-container {
+    padding: 3%;
+  }
+}
 #aboutSection .main-container .text-container p {
   display: table-cell;
   vertical-align: middle;

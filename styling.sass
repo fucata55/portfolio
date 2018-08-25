@@ -195,7 +195,11 @@ figcaption
             display: table
             height: 100%
             padding: 5%
-            color: white
+            color: white   
+
+            @media screen and (max-width: $breakpoint-cell)
+                padding: 3%
+                
             p
                 display: table-cell
                 vertical-align: middle
