@@ -105,22 +105,22 @@ nav li img {
 }
 
 figure {
-  position: relative;
+  display: inline-block;
   background-image: url("./images/skills-background.png");
   background-size: cover;
   border-radius: 100%;
   padding: 10px;
+  width: 15%;
+  min-width: 90px;
+  margin: 1em;
 }
 figure img {
-  height: 65%;
-  position: absolute;
-  top: 50%;
-  margin-top: -32.5%;
-  margin-left: -32.5%;
+  width: 75%;
 }
 
 figcaption {
   color: white;
+  text-shadow: 0 0 5px black;
 }
 
 .main-container {
@@ -368,7 +368,6 @@ figcaption {
   display: grid;
   grid-template-columns: minmax(10px, auto) minmax(260px, 85%) minmax(10px, auto);
   grid-template-rows: minmax(100px, 10%) minmax(400px, 75%) auto;
-  border: 2px solid blue;
 }
 #projectSection .main-container {
   position: relative;
@@ -494,14 +493,14 @@ figcaption {
 #skillSection {
   height: 100vh;
   display: grid;
-  grid-template-columns: minmax(10px, auto) minmax(260px, 70%) minmax(10px, auto);
+  grid-template-columns: minmax(10px, auto) minmax(260px, 85%) minmax(10px, auto);
   grid-template-rows: auto auto auto;
+  border: 2px solid blue;
 }
-#skillSection .main-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 200px);
-  grid-template-rows: repeat(auto-fit, 200px);
-  grid-gap: 15px;
+@media screen and (max-width: 360px) {
+  #skillSection {
+    height: 140vh;
+  }
 }
 
 /*# sourceMappingURL=secondary-style.css.map */
