@@ -107,13 +107,20 @@ figure
     background-image: url("./images/skills-background.png")
     background-size: cover
     border-radius: 100%
-    padding: 10px
+    padding: 1% 0px
     width: 15%
     min-width: 90px
-    margin: 1em
+    max-width: 200px
+
+    @media screen and (max-width: $breakpoint-tablet)
+        margin: 1em
+
+    @media screen and (max-width: $breakpoint-cell)
+        margin: 0.2em
 
     img
         width: 75%
+        max-width: 130px
         // position: absolute
         // top: 50%
         // margin-top: -32.5%
@@ -366,5 +373,5 @@ footer
     grid-template-rows: auto auto auto
     border: 2px solid blue
 
-    @media screen and (max-width: $breakpoint-cell)
-        height: 140vh
+    // @media screen and (max-width: $breakpoint-cell)
+    //     height: 140vh
