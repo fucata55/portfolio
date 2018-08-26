@@ -1,3 +1,7 @@
+html.sr {
+  visibility: hidden;
+}
+
 body {
   display: grid;
   grid-template-columns: auto minmax(10px, 250px) minmax(260px, 70%) minmax(10px, 250px) auto;
