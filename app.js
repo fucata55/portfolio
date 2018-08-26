@@ -17,7 +17,14 @@ for(let i = 0; i < navItem.length; i++) {
             section = document.getElementById("skillSection")
     }
     navItem[i].addEventListener("click", () => {
-        console.log(section)
         section.scrollIntoView({behavior: "smooth"})
     })
 }
+
+// feature: fade in on view port
+
+ScrollReveal().reveal("#heroSection")
+ScrollReveal().reveal("#aboutSection")
+ScrollReveal().reveal("#projectSection")
+//delay reveal on bigger screens because content skillSection is smaller in bigger screen that the animation will not be seen.
+window.innerWidth < 450 ? ScrollReveal().reveal("#skillSection") : ScrollReveal().reveal("#skillSection", {delay: 200})
