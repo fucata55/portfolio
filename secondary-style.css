@@ -99,6 +99,7 @@ nav li {
   display: inline-block;
   width: 60px;
   text-shadow: 0 0 5px black;
+  cursor: pointer;
 }
 nav li img {
   width: 70%;
