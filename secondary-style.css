@@ -481,7 +481,7 @@ footer {
 }
 
 #exploRestaurant {
-  background-image: url("./images/explorestaurant-project.png");
+  background-image: url("./images/ExploRestaurant-project");
   left: 75%;
 }
 #exploRestaurant:hover {
@@ -503,7 +503,7 @@ footer {
   #exploRestaurant {
     left: 0%;
     top: 75%;
-    background-image: url("./images/explorestaurant-project-mobile.png");
+    background-image: url("./images/ExploRestaurant-project-mobile.png");
   }
 }
 
