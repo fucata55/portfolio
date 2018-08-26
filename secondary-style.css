@@ -512,7 +512,6 @@ footer {
   display: grid;
   grid-template-columns: minmax(10px, auto) minmax(260px, 85%) minmax(10px, auto);
   grid-template-rows: minmax(100px, 10%) minmax(auto, 75%) auto;
-  border: 2px solid blue;
 }
 #skillSection .main-container {
   padding-top: 10%;
