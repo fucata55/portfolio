@@ -35,7 +35,7 @@ h4 {
   display: inline-block;
   font-weight: bold;
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 411px) {
   h1,
 h2,
 h3,
@@ -49,7 +49,7 @@ h1 {
   color: white;
   letter-spacing: 0.5em;
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 411px) {
   h1 {
     font-size: 2em;
   }
@@ -73,7 +73,7 @@ h3 img {
   display: block;
   margin: 5px auto;
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 411px) {
   h3 img {
     width: 30px;
   }
@@ -99,6 +99,7 @@ nav li {
   display: inline-block;
   width: 60px;
   text-shadow: 0 0 5px black;
+  cursor: pointer;
 }
 nav li img {
   width: 70%;
@@ -120,7 +121,7 @@ figure {
     margin: 1em;
   }
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 411px) {
   figure {
     margin: 0.2em;
   }
@@ -243,7 +244,7 @@ footer {
   width: 80%;
   margin: auto;
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 411px) {
   #heroImage {
     min-width: 260px;
   }
@@ -261,14 +262,14 @@ footer {
     grid-template-rows: minmax(100px, 10%) minmax(400px, 75%) auto;
   }
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 411px) {
   #aboutSection {
     grid-template-columns: auto 100% auto;
     grid-template-rows: auto 100% auto;
     padding: 0px;
   }
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 411px) {
   #aboutSection h3 {
     display: none;
   }
@@ -285,7 +286,7 @@ footer {
     grid-template-rows: 3fr 2fr 2fr;
   }
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 411px) {
   #aboutSection .main-container {
     grid-template-columns: 1fr;
     grid-template-rows: 3fr 2fr 1fr 1fr;
@@ -298,7 +299,7 @@ footer {
   padding: 5%;
   color: white;
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 411px) {
   #aboutSection .main-container .text-container {
     padding: 3%;
   }
@@ -321,7 +322,7 @@ footer {
     grid-row: 1/2;
   }
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 411px) {
   #photoContainer {
     grid-column: 1/2;
     grid-row: 1/2;
@@ -339,7 +340,7 @@ footer {
     grid-row: 2/4;
   }
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 411px) {
   #aboutSoftwareContainer {
     grid-row: 2/3;
   }
@@ -356,7 +357,7 @@ footer {
     grid-row: 2/3;
   }
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 411px) {
   #aboutBusinessContainer {
     grid-column: 1/2;
     grid-row: 3/4;
@@ -374,7 +375,7 @@ footer {
     grid-row: 3/4;
   }
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 411px) {
   #aboutOtherContainer {
     grid-column: 1/2;
     grid-row: 4/5;
@@ -385,7 +386,7 @@ footer {
   height: 100vh;
   display: grid;
   grid-template-columns: minmax(10px, auto) minmax(260px, 85%) minmax(10px, auto);
-  grid-template-rows: minmax(100px, 10%) minmax(400px, 75%) auto;
+  grid-template-rows: auto minmax(400px, 75%) auto;
 }
 #projectSection .main-container {
   position: relative;
