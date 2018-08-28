@@ -40,10 +40,11 @@ let parentList = [
     document.getElementsByTagName("footer")[0],
 ]
 
-// put distance :80px after revealing the sections to avoid Section moved by 80px on scroll from clicking navigation
-ScrollReveal({ distance: "80px"})
-
 function toReveal(parentList) {
+    
+    // Set "mobile" to false by default is causing "distance" not applied on mobile
+    ScrollReveal({distance: "80px", mobile: false})
+
     let parents = parentList
     parents.forEach(parent => {
         if (parent.getAttribute("role") === "navigation") {
@@ -51,7 +52,7 @@ function toReveal(parentList) {
             let delay = 0
             Array.from(theChildren).forEach(child => {
                 delay += 100
-                ScrollReveal().reveal(child, {origin: "top", delay: delay})
+                ScrollReveal().reveal(child, {origin: "top", delay: delay, mobile: true, distance:"80px"})
             })
         }
         else if (parent.getAttribute("id") === "heroSection") {
@@ -59,13 +60,13 @@ function toReveal(parentList) {
             let delay = 400
             Array.from(theChildren).forEach(child => {
                 delay += 100
-                ScrollReveal().reveal(child, {origin: "top", delay: delay})
+                ScrollReveal().reveal(child, {origin: "top", delay: delay, mobile: true, distance:"80px"})
             })
         }
         else if (parent.getAttribute("id") === "aboutSection") {
             let theChildren = parent.getElementsByClassName("main-container")[0].getElementsByTagName("div")
             let delay = 0
-            let origin = ["left", "top", "bottom", "bottom"]
+            let origin = ["left", "top", "bottom", "right"]
             Array.from(theChildren).forEach((child, i) => {
                 delay += 100
                 ScrollReveal().reveal(child, {origin: origin[i], delay: delay})
