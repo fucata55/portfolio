@@ -53,7 +53,7 @@ function toReveal(parentList) {
             let delay = 0
             Array.from(theChildren).forEach(child => {
                 delay += 100
-                ScrollReveal().reveal(child, {origin: "top", delay: delay, mobile: true, distance:"80px"})
+                window.innerWidth < 411? ScrollReveal().reveal(child, {origin: "bottom", delay: delay, mobile: true, distance: "10px"}) : ScrollReveal().reveal(child, {origin: "top", delay: delay})
             })
         }
         else if (parent.getAttribute("id") === "heroSection") {
@@ -61,7 +61,7 @@ function toReveal(parentList) {
             let delay = 400
             Array.from(theChildren).forEach(child => {
                 delay += 100
-                ScrollReveal().reveal(child, {origin: "top", delay: delay, mobile: true, distance:"80px"})
+                ScrollReveal().reveal(child, {origin: "top", delay: delay, mobile: true, distance: "10px"})
             })
         }
         else if (parent.getAttribute("id") === "aboutSection") {
