@@ -141,9 +141,21 @@ figcaption {
 }
 
 footer {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+footer div {
   display: flex;
   justify-content: space-evenly;
   padding: 1em;
+  height: 32px;
+}
+footer p {
+  color: white;
+  text-align: center;
+  margin: 0px;
+}
+footer a {
+  text-decoration: underline;
 }
 
 .main-container {
