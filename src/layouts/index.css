@@ -2,6 +2,10 @@ html.sr {
   visibility: hidden;
 }
 
+@font-face {
+  font-family: "Ubuntu"
+}
+
 body {
   display: grid;
   grid-template-columns: auto minmax(10px, 250px) minmax(260px, 70%) minmax(10px, 250px) auto;

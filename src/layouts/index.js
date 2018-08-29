@@ -5,7 +5,6 @@ import Helmet from 'react-helmet'
 import Header from '../components/header'
 import './index.css'
 import favicon from "../../public/static/images/icons/Stephen-icon.png"
-import WebFont from "webfontloader"
 
 const Layout = ({children, data}) => (
   <div>
