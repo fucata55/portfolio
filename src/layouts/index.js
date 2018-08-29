@@ -4,6 +4,7 @@ import Helmet from 'react-helmet'
 
 import Header from '../components/header'
 import HeroSection from '../components/HeroSection'
+import AboutSection from '../components/AboutSection'
 import "./reset.css"
 import './index.css'
 import favicon from "../../public/static/images/icons/Stephen-icon.png"
@@ -23,6 +24,7 @@ const Layout = () => (
     <Header />
     <main>
       <HeroSection />
+      <AboutSection />
     </main>
   </div>
 )
