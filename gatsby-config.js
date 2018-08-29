@@ -1,13 +1,13 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: `Stephen Liong's Portfolio`,
   },
   plugins: [
-    'gatsby-plugin-react-helmet', 
+    `gatsby-plugin-react-helmet`, 
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
-      resolve: 'gatsby-plugin-web-font-loader',
+      resolve: `gatsby-plugin-web-font-loader`,
       options: {
         google: {
           families: ['Ubuntu']
