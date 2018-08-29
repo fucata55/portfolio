@@ -4,14 +4,19 @@ import Helmet from 'react-helmet'
 
 import Header from '../components/header'
 import './index.css'
+import favicon from "../../public/static/images/icons/Stephen-icon.png"
+import WebFont from "webfontloader"
 
-const Layout = ({ children, data }) => (
+const Layout = ({children, data}) => (
   <div>
     <Helmet
-      title={data.site.siteMetadata.title}
+      title= "Stephen Liong's Portfolio"
       meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+        { name: "viewport", content: "width=device-width, initial-scale=1" },
+        { charset: "utf-8" },
+      ]}
+      link={[
+        {rel: "shortcut icon", type: "image/png", href: `${favicon}`}
       ]}
     />
     <Header siteTitle={data.site.siteMetadata.title} />
