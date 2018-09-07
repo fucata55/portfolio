@@ -66,6 +66,9 @@ query images {
   hero: file(name: { eq: "hero-image" }) {
     ...sharpImages
 	}
+  heroBg: file(name: { eq: "hero-background" }) {
+    ...sharpImages
+	}
 }
 fragment sharpImages on File {
   childImageSharp {
