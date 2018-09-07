@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-
+import Img from 'gatsby-image'
 import Header from '../components/header'
 import Footer from '../components/footer'
 import HeroSection from '../components/HeroSection'
@@ -10,9 +10,9 @@ import ProjectSection from '../components/ProjectSection'
 import SkillSection from '../components/SkillSection'
 import "./reset.css"
 import './index.css'
-import favicon from "../../public/static/images/icons/Stephen-icon.png"
+import favicon from "../images/icons/Stephen-icon.png"
 
-const Layout = () => (
+const Layout = ({data}) => (
   <div>
     <Helmet
       title= "Stephen Liong's Portfolio"
@@ -24,9 +24,9 @@ const Layout = () => (
         {rel: "shortcut icon", type: "image/png", href: `${favicon}`}
       ]}
     />
-    <Header />
+    <Header images={data}/>
     <main>
-      <HeroSection />
+      <HeroSection icon={data} />
       <AboutSection />
       <ProjectSection />
       <SkillSection />
@@ -38,11 +38,25 @@ const Layout = () => (
 export default Layout
 
 export const query = graphql`
-  query SiteTitleQuery {
-    site {
-      siteMetadata {
-        title
+query images {
+  stephenIcon: file(name: { eq: "Stephen-icon"}) {
+    ...sharpImages
+	}
+  accountIcon: file(name: { eq: "account-icon"}) {
+    ...sharpImages
+	}
+  projectsIcon: file(name: { eq: "projects-icon"}) {
+    ...sharpImages
+	}
+  skillsIcon: file(name: { eq: "skills-icon"}) {
+    ...sharpImages
+	}
+}
+fragment sharpImages on File {
+  childImageSharp {
+      resolutions {
+        ...GatsbyImageSharpResolutions
       }
     }
-  }
+}
 `
