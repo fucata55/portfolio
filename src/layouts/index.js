@@ -27,7 +27,7 @@ const Layout = ({data}) => (
     <Header images={data}/>
     <main>
       <HeroSection images={data} />
-      <AboutSection />
+      <AboutSection images={data} />
       <ProjectSection />
       <SkillSection />
     </main>
@@ -67,6 +67,30 @@ query images {
     ...sharpImages
 	}
   heroBg: file(name: { eq: "hero-background" }) {
+    ...sharpImages
+	}
+  StephenPhoto: file(name: { eq: "Stephen-photo-light-square" }) {
+    ...sharpImages
+	}
+  kotlinIcon: file(name: { eq: "Kotlin-icon" }) {
+    ...sharpImages
+	}
+  tornadoFXIcon: file(name: { eq: "TornadoFX-icon" }) {
+    ...sharpImages
+	}
+  jsIcon: file(name: { eq: "JS-icon" }) {
+    ...sharpImages
+	}
+  cssIcon: file(name: { eq: "CSS-icon" }) {
+    ...sharpImages
+	}
+  mongoDBIcon: file(name: { eq: "MongoDB-icon" }) {
+    ...sharpImages
+	}
+  reactIcon: file(name: { eq: "React-icon" }) {
+    ...sharpImages
+	}
+  nodeIcon: file(name: { eq: "nodeJS-icon" }) {
     ...sharpImages
 	}
 }
