@@ -26,7 +26,7 @@ const Layout = ({data}) => (
     />
     <Header images={data}/>
     <main>
-      <HeroSection icon={data} />
+      <HeroSection images={data} />
       <AboutSection />
       <ProjectSection />
       <SkillSection />
@@ -39,16 +39,31 @@ export default Layout
 
 export const query = graphql`
 query images {
-  stephenIcon: file(name: { eq: "Stephen-icon"}) {
+  stephenIcon: file(name: { eq: "Stephen-icon" }) {
     ...sharpImages
 	}
-  accountIcon: file(name: { eq: "account-icon"}) {
+  accountIcon: file(name: { eq: "account-icon" }) {
     ...sharpImages
 	}
-  projectsIcon: file(name: { eq: "projects-icon"}) {
+  projectsIcon: file(name: { eq: "projects-icon" }) {
     ...sharpImages
 	}
-  skillsIcon: file(name: { eq: "skills-icon"}) {
+  skillsIcon: file(name: { eq: "skills-icon" }) {
+    ...sharpImages
+	}
+  githubIcon: file(name: { eq: "GitHub-icon" }) {
+    ...sharpImages
+	}
+  linkedInIcon: file(name: { eq: "LinkedIn-icon" }) {
+    ...sharpImages
+	}
+  gmailIcon: file(name: { eq: "Gmail-icon" }) {
+    ...sharpImages
+	}
+  twitterIcon: file(name: { eq: "Twitter-icon" }) {
+    ...sharpImages
+	}
+  hero: file(name: { eq: "hero-image" }) {
     ...sharpImages
 	}
 }
