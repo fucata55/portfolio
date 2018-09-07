@@ -29,7 +29,7 @@ const Layout = ({data}) => (
       <HeroSection images={data} />
       <AboutSection images={data} />
       <ProjectSection images={data} />
-      <SkillSection />
+      <SkillSection images={data}/>
     </main>
     <Footer />
   </div>
@@ -115,6 +115,42 @@ query images {
     ...sharpImages
 	}
   youTubeIcon: file(name: { eq: "YouTube-icon" }) {
+    ...sharpImages
+	}
+  htmlLogo: file(name: { eq: "HTML-logo" }) {
+    ...sharpImages
+	}
+  cssLogo: file(name: { eq: "CSS-logo" }) {
+    ...sharpImages
+	}
+  jsLogo: file(name: { eq: "JS-logo" }) {
+    ...sharpImages
+	}
+  jQueryLogo: file(name: { eq: "JQuery-logo" }) {
+    ...sharpImages
+	}
+  reactLogo: file(name: { eq: "React-logo" }) {
+    ...sharpImages
+	}
+  nodeLogo: file(name: { eq: "NodeJS-logo" }) {
+    ...sharpImages
+	}
+  mongoDbLogo: file(name: { eq: "MongoDB-logo" }) {
+    ...sharpImages
+	}
+  intelliJLogo: file(name: { eq: "IntelliJ-logo" }) {
+    ...sharpImages
+	}
+  kotlinLogo: file(name: { eq: "Kotlin-logo" }) {
+    ...sharpImages
+	}
+  tornadoFXLogo: file(name: { eq: "TornadoFX-logo" }) {
+    ...sharpImages
+	}
+  gitHubLogo: file(name: { eq: "GitHub-logo" }) {
+    ...sharpImages
+	}
+  skillBg: file(name: { eq: "skills-background" }) {
     ...sharpImages
 	}
 }
