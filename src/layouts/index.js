@@ -28,7 +28,7 @@ const Layout = ({data}) => (
     <main>
       <HeroSection images={data} />
       <AboutSection images={data} />
-      <ProjectSection />
+      <ProjectSection images={data} />
       <SkillSection />
     </main>
     <Footer />
@@ -91,6 +91,30 @@ query images {
     ...sharpImages
 	}
   nodeIcon: file(name: { eq: "nodeJS-icon" }) {
+    ...sharpImages
+	}
+  gantt: file(name: { eq: "Gantt-project" }) {
+    ...sharpImages
+	}
+  ppf: file(name: { eq: "ProPlayersFoundation-project" }) {
+    ...sharpImages
+	}
+  ataNote: file(name: { eq: "ataNote-project" }) {
+    ...sharpImages
+	}
+  exploRestaurant: file(name: { eq: "ExploRestaurant-project" }) {
+    ...sharpImages
+  }
+  htmlIcon: file(name: { eq: "HTML-icon" }) {
+    ...sharpImages
+	}
+  jQueryIcon: file(name: { eq: "JQuery-icon" }) {
+    ...sharpImages
+	}
+  wordPressIcon: file(name: { eq: "WordPress-icon" }) {
+    ...sharpImages
+	}
+  youTubeIcon: file(name: { eq: "YouTube-icon" }) {
     ...sharpImages
 	}
 }
