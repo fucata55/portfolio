@@ -31,7 +31,7 @@ const Layout = ({data}) => (
       <ProjectSection images={data} />
       <SkillSection images={data}/>
     </main>
-    <Footer />
+    <Footer images={data} />
   </div>
 )
 
