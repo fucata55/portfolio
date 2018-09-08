@@ -7,7 +7,7 @@ import AboutSection from '../components/AboutSection'
 import ProjectSection from '../components/ProjectSection'
 import SkillSection from '../components/SkillSection'
 import "./reset.css"
-import './index.css'
+import './index.sass'
 import favicon from "../images/icons/Stephen-icon.png"
 
 const Layout = ({data}) => (
