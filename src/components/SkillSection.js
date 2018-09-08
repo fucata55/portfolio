@@ -1,6 +1,7 @@
 import React from 'react'
 import Img from "gatsby-image"
 import styled from 'styled-components'
+import Figure from "./Figure"
 
 const BgImage = styled(Img)`
   position: absolute;
@@ -18,90 +19,25 @@ const BgImage = styled(Img)`
   }
 `
 
-const SkillSection = props => (
+const SkillSection = props => {
+    let bg = props.images.skillBg.childImageSharp.resolutions
+    return (
     <section id="skillSection">
         <h3 role="heading"><Img resolutions={props.images.skillsIcon.childImageSharp.resolutions} alt="Skills icon" />Skills and Tools</h3>
-
         <div className="main-container">
-            <figure>
-                <BgImage resolutions={props.images.skillBg.childImageSharp.resolutions} />
-                <a href="https://www.w3schools.com/html/html_intro.asp" target="_blank" role="link">
-                    <Img resolutions={props.images.htmlLogo.childImageSharp.resolutions} alt="link to HTML description" role="img" />
-                    <figcaption>HTML</figcaption>
-                </a>
-            </figure>
-            <figure>
-                <BgImage resolutions={props.images.skillBg.childImageSharp.resolutions} />
-                <a href="https://www.w3schools.com/css/" target="_blank" role="link">
-                    <Img resolutions={props.images.cssLogo.childImageSharp.resolutions} alt="link to CSS description" role="img" />
-                </a>
-                <figcaption>CSS</figcaption>
-            </figure>
-            <figure>
-                <BgImage resolutions={props.images.skillBg.childImageSharp.resolutions} />
-                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" role="link">
-                    <Img resolutions={props.images.jsLogo.childImageSharp.resolutions} alt="link to JavaScript description" role="img" />
-                </a>
-                <figcaption>JavaScript</figcaption>
-            </figure>
-            <figure>
-                <BgImage resolutions={props.images.skillBg.childImageSharp.resolutions} />
-                <a href="https://jquery.com/" target="_blank" role="link">
-                    <Img resolutions={props.images.jQueryLogo.childImageSharp.resolutions} alt="link to jQuery description" role="img" />
-                </a>
-                <figcaption>jQuery</figcaption>
-            </figure>
-            <figure>
-                <BgImage resolutions={props.images.skillBg.childImageSharp.resolutions} />
-                <a href="https://reactjs.org/" target="_blank" role="link">
-                    <Img resolutions={props.images.reactLogo.childImageSharp.resolutions} alt="link to React JS description" role="img" />
-                </a>
-                <figcaption>ReactJS</figcaption>
-            </figure>
-            <figure>
-                <BgImage resolutions={props.images.skillBg.childImageSharp.resolutions} />
-                <a href="https://nodejs.org/en/about/" target="_blank" role="link">
-                    <Img resolutions={props.images.nodeLogo.childImageSharp.resolutions} alt="link to Node JS description" role="img" />
-                </a>
-                <figcaption>NodeJS</figcaption>
-            </figure>
-            <figure>
-                <BgImage resolutions={props.images.skillBg.childImageSharp.resolutions} />
-                <a href="https://www.mongodb.com/" target="_blank" role="link">
-                    <Img resolutions={props.images.mongoDbLogo.childImageSharp.resolutions} alt="link to MongoDB description" role="img" />
-                </a>
-                <figcaption>MongoDB</figcaption>
-            </figure>
-            <figure>
-                <BgImage resolutions={props.images.skillBg.childImageSharp.resolutions} />
-                <a href="https://kotlinlang.org/" target="_blank" role="link">
-                    <Img resolutions={props.images.kotlinLogo.childImageSharp.resolutions} alt="link to Kotlin description" role="img" />
-                </a>
-                <figcaption>Kotlin</figcaption>
-            </figure>
-            <figure>
-                <BgImage resolutions={props.images.skillBg.childImageSharp.resolutions} />
-                <a href="https://www.jetbrains.com/idea/" target="_blank" role="link">
-                    <Img resolutions={props.images.intelliJLogo.childImageSharp.resolutions} alt="link to IntelliJ description" role="img" />
-                </a>
-                <figcaption>IntelliJ IDEA</figcaption>
-            </figure>
-            <figure>
-                <BgImage resolutions={props.images.skillBg.childImageSharp.resolutions} />
-                <a href="https://tornadofx.io/" target="_blank" role="link">
-                    <Img resolutions={props.images.tornadoFXLogo.childImageSharp.resolutions} alt="link to TornadoFX description" role="img" />
-                </a>
-                <figcaption>TornadoFX</figcaption>
-            </figure>
-            <figure>
-                <BgImage resolutions={props.images.skillBg.childImageSharp.resolutions} />
-                <a href="https://github.com/fucata55" target="_blank" role="link">
-                    <Img resolutions={props.images.gitHubLogo.childImageSharp.resolutions} alt="link to GitHub description" role="img" />
-                </a>
-                <figcaption>GitHub</figcaption>
-            </figure>
+            <Figure bg={bg} link="https://www.w3schools.com/html/html_intro.asp" img={props.images.htmlLogo.childImageSharp.resolutions} caption="HTML" />
+            <Figure bg={bg} link="https://www.w3schools.com/css/" img={props.images.cssLogo.childImageSharp.resolutions} caption="CSS" />
+            <Figure bg={bg} link="https://developer.mozilla.org/en-US/docs/Web/JavaScript" img={props.images.jsLogo.childImageSharp.resolutions} caption="JavaScript" />
+            <Figure bg={bg} link="https://jquery.com/" img={props.images.jQueryLogo.childImageSharp.resolutions} caption="jQuery" />
+            <Figure bg={bg} link="https://reactjs.org/" img={props.images.reactLogo.childImageSharp.resolutions} caption="React JS" />
+            <Figure bg={bg} link="https://nodejs.org/en/about/" img={props.images.nodeLogo.childImageSharp.resolutions} caption="Node JS" />
+            <Figure bg={bg} link="https://www.mongodb.com/" img={props.images.mongoDbLogo.childImageSharp.resolutions} caption="MongoDb" />
+            <Figure bg={bg} link="https://kotlinlang.org/" img={props.images.kotlinLogo.childImageSharp.resolutions} caption="Kotlin" />
+            <Figure bg={bg} link="https://www.jetbrains.com/idea/" img={props.images.intelliJLogo.childImageSharp.resolutions} caption="intelliJ" />
+            <Figure bg={bg} link="https://tornadofx.io/" img={props.images.tornadoFXLogo.childImageSharp.resolutions} caption="Tornado FX" />
+            <Figure bg={bg} link="https://github.com/fucata55" img={props.images.gitHubLogo.childImageSharp.resolutions} caption="GitHub" />
         </div>
     </section>
-)
+)}
 
 export default SkillSection
