@@ -149,7 +149,11 @@ query images {
     ...sharpImages
 	}
   skillBg: file(name: { eq: "skills-background" }) {
-    ...sharpImages
+    childImageSharp {
+      sizes(maxWidth: 200) {
+        ...GatsbyImageSharpSizes
+      }
+    }
 	}
 }
 fragment sharpImages on File {

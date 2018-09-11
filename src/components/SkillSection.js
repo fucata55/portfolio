@@ -4,12 +4,10 @@ import styled from 'styled-components'
 import Figure from "./Figure"
 
 const BgImage = styled(Img)`
-  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   z-index: -1;
-  height: 100vh; // or whatever
 
   // Adjust image positioning (if image covers area with defined height) and add font-family for polyfill
   & > img {
@@ -20,7 +18,7 @@ const BgImage = styled(Img)`
 `
 
 const SkillSection = props => {
-    let bg = props.images.skillBg.childImageSharp.resolutions
+    let bg = props.images.skillBg.childImageSharp.sizes
     return (
     <section id="skillSection">
         <h3 role="heading"><Img resolutions={props.images.skillsIcon.childImageSharp.resolutions} alt="Skills icon" />Skills and Tools</h3>

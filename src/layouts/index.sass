@@ -28,7 +28,7 @@ $breakpoint-cell: 411px
 html.sr
     visibility: hidden
 
-body
+.body
     display: grid
     // grid colum 2 and 4 have max 250px assumming picture will stretch good until 70% + 500px of the screen
     grid-template-columns: auto minmax(10px, 250px) minmax(260px, 70%) minmax(10px, 250px) auto
@@ -47,11 +47,14 @@ li
     list-style: none
     color: white
     line-height: 1.5em
+    margin: 0px 5px
+
 
 p
     line-height: 1.7em
     margin-bottom: 1em
-
+    .gatsby-image-outer-wrapper
+        margin-right: 5px
 h1,
 h2,
 h3,
@@ -112,12 +115,18 @@ nav
 figure
     display: inline-block
     //background-image: url("./images/skills-background.png")
-    background-size: cover
-    border-radius: 100%
+    // background-size: cover
+    // border-radius: 100%
     padding: 1% 0px
-    width: 15%
+    // width: 15%
+    width: 200px
     min-width: 90px
     max-width: 200px
+
+    a
+        display: inline-block
+        width: 98%
+        margin: 12% 0px
 
     @media screen and (max-width: $breakpoint-tablet)
         margin: 1em
@@ -125,9 +134,10 @@ figure
     @media screen and (max-width: $breakpoint-cell)
         margin: 0.2em
 
-    img
-        width: 75%
-        max-width: 130px
+    // img
+        
+    //     width: 75%
+    //     max-width: 130px
 
 figcaption
     color: white
@@ -158,6 +168,13 @@ footer
 .large-image
     width: 100%
     object-fit: cover
+
+.gatsby-image-outer-wrapper
+    display: inline-block
+    // margin-right: 5px
+
+.skill-bg
+    position: absolute !important
 
 .text-container
     display: table
@@ -195,6 +212,11 @@ footer
 
 .code
     +liveAndCodeLinks(#633FBE)
+
+.hero-bg
+    grid-column: 1 / span 3
+    grid-row: 1 / span 3
+    // margin: 0px
 
 #heroSection
     //background-image: url("./images/hero-background.png")
@@ -260,10 +282,7 @@ footer
             grid-gap: 0px
 
         .text-container
-            display: table
-            height: 100%
             padding: 5%
-            color: white   
 
             @media screen and (max-width: $breakpoint-cell)
                 padding: 3%
