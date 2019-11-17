@@ -1,387 +1,832 @@
-<!doctype <!DOCTYPE html>
+<!DOCTYPE html>
 <html class="sr" lang="en">
-
-<head>
+  <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Stephen Liong's Portfolio </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Stephen Liong's Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="https://unpkg.com/scrollreveal"></script>
     <script>
-        ScrollReveal({ reset: true });
+      ScrollReveal({ reset: true });
     </script>
-    <link rel="shortcut icon" href="images/icons/Stephen-icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" media="screen" href="secondary-style.css" />
-</head>
+    <link
+      rel="shortcut icon"
+      href="images/icons/Stephen-icon.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Ubuntu"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="secondary-style.css"
+    />
+  </head>
 
-<body>
+  <body>
     <header role="banner">
-        <nav role="navigation">
-            <li class="nav-item" id="heroSectionLink">
-                <img src="images/icons/Stephen-icon.png" alt="Stephen's icon">
-                Stephen
-            </li>
-            <li class="nav-item" id="aboutSectionLink">
-                <img src="images/icons/account-icon.png" alt="About icon">
-                About
-            </li>
-            <li class="nav-item" id="projectSectionLink">
-                <img src="images/icons/projects-icon.png" alt="Projects icon">
-                Projects
-            </li>
-            <li class="nav-item" id="skillSectionLink">
-                <img src="images/icons/skills-icon.png" alt="Skills icon">
-                Skills
-            </li>
-        </nav>
+      <nav role="navigation">
+        <li class="nav-item" id="heroSectionLink">
+          <img src="images/icons/Stephen-icon.png" alt="Stephen's icon" />
+          Stephen
+        </li>
+        <li class="nav-item" id="aboutSectionLink">
+          <img src="images/icons/account-icon.png" alt="About icon" />
+          About
+        </li>
+        <li class="nav-item" id="projectSectionLink">
+          <img src="images/icons/projects-icon.png" alt="Projects icon" />
+          Projects
+        </li>
+        <li class="nav-item" id="skillSectionLink">
+          <img src="images/icons/skills-icon.png" alt="Skills icon" />
+          Skills
+        </li>
+      </nav>
     </header>
     <main>
+      <!-- above fold section-->
+      <section id="heroSection">
+        <!-- main container -->
+        <div class="main-container">
+          <!-- sub container - hero -->
+          <div id="heroImageContainer">
+            <img
+              class="large-image"
+              id="heroImage"
+              src="images/hero-image.png"
+              alt="Stephen Liong logo"
+            />
+            <h1 role="heading">Software Engineer</h1>
+          </div>
 
-        <!-- above fold section-->
-        <section id="heroSection">
+          <!-- sub container - online profile icons -->
+          <div class="contact-links-container">
+            <a
+              class="contact-link"
+              href="https://github.com/fucata55"
+              target="_blank"
+              role="link"
+            >
+              <img
+                src="images/icons/GitHub-icon.png"
+                alt="Link to Stephen's GitHub"
+                role="img"
+              />
+            </a>
+            <a
+              class="contact-link"
+              href="https://www.linkedin.com/in/stephen-liong-75252775/"
+              target="_blank"
+              role="link"
+            >
+              <img
+                src="images/icons/LinkedIn-icon.png"
+                alt="Link to Stephen's LinkedIn"
+                role="img"
+              />
+            </a>
+            <a
+              class="contact-link"
+              href="mailto:sliong325@gmail.com"
+              target="_blank"
+              role="link"
+            >
+              <img
+                src="images/icons/Gmail-icon.png"
+                alt="Link to Stephen's Gmail"
+                role="img"
+              />
+            </a>
+            <a
+              class="contact-link"
+              href="https://www.codewars.com/users/fucata"
+              target="_blank"
+              role="link"
+            >
+              <img
+                src="images/icons/CodeWars-icon.png"
+                alt="Link to Stephen's Code Wars profile"
+                role="img"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
 
-            <!-- main container -->
-            <div class="main-container">
+      <!-- about stephen section -->
+      <section id="aboutSection">
+        <h3 role="heading">
+          <img src="images/icons/account-icon.png" alt="About icon" />About
+          Stephen
+        </h3>
 
-                <!-- sub container - hero -->
-                <div id="heroImageContainer">
-                    <img class="large-image" id="heroImage" src="images/hero-image.png" alt="Stephen Liong logo">
-                    <h1 role="heading">Software Engineer</h1>
-                </div>
+        <!-- main container -->
+        <div class="main-container">
+          <!-- sub container - my photo -->
+          <div id="photoContainer">
+            <picture>
+              <source
+                class="large-image"
+                media="(max-width: 1000px)"
+                srcset="./images/Stephen-photo-light-wide.png"
+              />
+              <img
+                class="large-image"
+                id="defaultPhoto"
+                src="./images/Stephen-photo-light-square.png"
+                alt="Stephen's picture"
+                role="img"
+              />
+            </picture>
+          </div>
 
-                <!-- sub container - online profile icons -->
-                <div class="contact-links-container">
-                    <a class="contact-link" href="https://github.com/fucata55" target="_blank" role="link">
-                        <img src="images/icons/GitHub-icon.png" alt="Link to Stephen's GitHub" role="img">
-                    </a>
-                    <a class="contact-link" href="https://www.linkedin.com/in/stephen-liong-75252775/" target="_blank" role="link">
-                        <img src="images/icons/LinkedIn-icon.png" alt="Link to Stephen's LinkedIn" role="img">
-                    </a>
-                    <a class="contact-link" href="mailto:sliong325@gmail.com" target="_blank" role="link">
-                        <img src="images/icons/Gmail-icon.png" alt="Link to Stephen's Gmail" role="img">
-                    </a>
-                    <a class="contact-link" href="https://twitter.com/sfucata" target="_blank" role="link">
-                        <img src="images/icons/Twitter-icon.png" alt="Link to Stephen's Tweeter" role="img">
-                    </a>
+          <!-- sub container - software side of me -->
+          <div id="aboutSoftwareContainer" class="text-container">
+            <p role="text">
+              Stephen is a software engineer with web front-end experience. 
+              He is an “Agile” and adventurous developer with key expertise 
+              revolves around 
+              <a href="https://angular.io/" target="_blank" role="link">
+                <img
+                src="./images/icons/Angular-icon.png"
+                alt="Angular icon"
+              /></a> Angular practices (2+), 
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                target="_blank"
+                role="link"
+              >
+                <img
+                  src="./images/icons/JS-icon.png"
+                  alt="JavaScript icon"
+                /></a
+              > vanilla Javascript, and 
+              <a
+                href="https://sass-lang.com/"
+                target="_blank"
+                role="link"
+              >
+                <img
+                  src="./images/icons/Sass-icon.png"
+                  alt="Sass icon"
+                /></a
+              > styling. Also, a visioner in a team with attention to detail and the belief of “building software that matters to the users”.
+            </p>
+          </div>
+          <!-- sub container - business side of me -->
+          <div id="aboutFanContainer" class="text-container">
+            <p role="text">
+              A fan of CSS and several programming paradigms such as object-oriented, declarative, and modular programming.
+            </p>
+          </div>
 
-                </div>
+          <!-- sub container - tech introduced -->
+          <div id="aboutOtherTechContainer" class="text-container">
+            <p role="text">
+              Also, introduced to
+              <a
+                href="https://nodejs.org/en/about/"
+                target="_blank"
+                role="link"
+              >
+                <img
+                  src="./images/icons/nodeJS-icon.png"
+                  alt="NodeJS icon"
+                />
+              </a> NodeJS, 
+              <a href="https://reactjs.org/" target="_blank" role="link">
+                <img
+                  src="./images/icons/React-icon.png"
+                  alt="ReactJS icon"
+                />
+              </a> ReactJS, 
+              <a href="https://www.mongodb.com/" target="_blank" role="link">
+                <img
+                  src="./images/icons/MongoDB-icon.png"
+                  alt="MongoDB icon"
+                />
+              </a >MongoDB, 
+              <a
+                href="https://www.python.org/"
+                target="_blank"
+                role="link"
+              >
+                <img
+                  src="./images/icons/Python-icon.png"
+                  alt="Python icon"
+                /></a
+              > Phyton, 
+              <a
+                href="https://docs.oracle.com/javase/8/docs/"
+                target="_blank"
+                role="link"
+              >
+                <img
+                  src="./images/icons/Java-icon.png"
+                  alt="JavaScript icon"
+                />
+              </a> Java 8.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- projects section -->
+      <section id="projectSection">
+        <h3 role="heading">
+          <img
+            src="images/icons/projects-icon.png"
+            alt="Projects icon"
+          />Projects
+        </h3>
+
+        <!-- main container -->
+        <div class="main-container">
+          <!-- sub container - project 1 -->
+          <div class="project" id="gantt">
+            <!-- sub-sub container - project description -->
+            <div class="text-container">
+              <h4>Gantt Project Management</h4>
+              <p role="text">
+                Gantt is a single-page project management software built to
+                expedite the visual representation of a project plan.
+              </p>
+              <p role="text">
+                Skills and tools implemented:
+                <a
+                  href="https://www.w3schools.com/html/html_intro.asp"
+                  target="_blank"
+                  role="link"
+                >
+                  <img
+                    src="./images/icons/HTML-icon.png"
+                    alt="HTML icon"
+                  />HTML </a
+                >,
+                <a
+                  href="https://www.w3schools.com/css/"
+                  target="_blank"
+                  role="link"
+                >
+                  <img
+                    src="./images/icons/CSS-icon.png"
+                    alt="CSS icon"
+                  />CSS </a
+                >,
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                  target="_blank"
+                  role="link"
+                >
+                  <img
+                    src="./images/icons/JS-icon.png"
+                    alt="JavaScript icon"
+                  />JavaScript </a
+                >,
+                <a href="https://jquery.com/" target="_blank" role="link">
+                  <img
+                    src="./images/icons/JQuery-icon.png"
+                    alt="jQuery icon"
+                  />jQuery </a
+                >,
+                <a
+                  href="https://hackernoon.com/what-is-ui-ux-design-1f01e9dbbf02"
+                  target="_blank"
+                  role="link"
+                  >UI/UX design</a
+                >,
+                <a href="https://reactjs.org/" target="_blank" role="link">
+                  <img
+                    src="./images/icons/React-icon.png"
+                    alt="React JS icon"
+                  />ReactJS </a
+                >,
+                <a
+                  href="https://nodejs.org/en/about/"
+                  target="_blank"
+                  role="link"
+                >
+                  <img
+                    src="./images/icons/nodeJS-icon.png"
+                    alt="Node JS icon"
+                  />NodeJS </a
+                >,
+                <a href="https://expressjs.com/" target="_blank" role="link"
+                  >ExpressJS</a
+                >,
+                <a href="https://www.mongodb.com/" target="_blank" role="link">
+                  <img
+                    src="./images/icons/MongoDB-icon.png"
+                    alt="MongoDB icon"
+                  />MongoDB </a
+                >,
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Glossary/REST"
+                  target="_blank"
+                  role="link"
+                  >REST API</a
+                >,
+                <a href="https://mlab.com/" target="_blank" role="link">mLab</a
+                >, and
+                <a
+                  href="https://www.w3schools.com/html/html_responsive.asp"
+                  target="_blank"
+                  role="link"
+                  >responsive web design</a
+                >
+              </p>
+
+              <!-- sub-sub-sub container - Link to live project and GitHub -->
+              <div>
+                <a
+                  class="live"
+                  href="https://fucata55.github.io/gantt-project-management-full-stack-capstone-react/build"
+                  target="_blank"
+                  role="link"
+                  >Live</a
+                >
+                |
+                <a
+                  class="code"
+                  href="https://github.com/fucata55/gantt-project-management-full-stack-capstone-react"
+                  target="_blank"
+                  role="link"
+                  >Code</a
+                >
+              </div>
             </div>
-        </section>
+          </div>
 
-        <!-- about stephen section -->
-        <section id="aboutSection">
-            <h3 role="heading"><img src="images/icons/account-icon.png" alt="About icon">About Stephen</h3>
+          <!-- sub container - project 2 -->
+          <div class="project" id="ppf">
+            <!-- sub-sub container - project description -->
+            <div class="text-container">
+              <h4>Pro Players Foundation</h4>
+              <p role="text">
+                Pro Players Foundation is a corporate website to introduce its
+                activities, collect donations, and more
+              </p>
+              <p role="text">
+                Skills and tools implemented:
+                <a href="https://wordpress.org/" target="_blank" role="link">
+                  <img
+                    src="./images/icons/WordPress-icon.png"
+                    alt="WordPress icon"
+                  />WordPress
+                </a>
+                and
+                <a
+                  href="https://hackernoon.com/what-is-ui-ux-design-1f01e9dbbf02"
+                  target="_blank"
+                  role="link"
+                  >UI/UX design</a
+                >
+              </p>
 
-            <!-- main container -->
-            <div class="main-container">
-
-                <!-- sub container - my photo -->
-                <div id="photoContainer">
-                    <picture>
-                        <source class="large-image" media="(max-width: 1000px)" srcset="./images/Stephen-photo-light-wide.png">
-                        <img class="large-image" id="defaultPhoto" src="./images/Stephen-photo-light-square.png" alt="Stephen's picture" role="img">
-                    </picture>
-                </div>
-
-                    <!-- sub container - software side of me -->
-                    <div id="aboutSoftwareContainer"class="text-container">
-                        <p role="text">Stephen is a software engineer seeking a full-time development position. His skill set includes
-                            <a href="https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html" target="_blank" role="link">Clean Architecture</a>
-                            front-end production level coding employing Agile software development using 
-                            <a href="https://kotlinlang.org/" target="_blank" role="link">
-                                <img src="./images/icons/Kotlin-icon.png" alt="Kotlin icon"> Kotlin
-                            </a>
-                             and 
-                            <a href="https://tornadofx.io/" target="_blank" role="link">
-                                <img src="./images/icons/TornadoFX-icon.png" alt="TornadoFX icon"> TornadoFX
-                            </a>.
-                        </p>
-                    </div>
-
-                    <!-- sub container - business side of me -->
-                    <div id="aboutBusinessContainer" class="text-container">
-                        <p role="text">Additional business education provides a unique perspective on software's role in
-                            areas of productivity, marketing, and interpersonal relationships.</p>
-                    </div>
-
-                    <!-- sub container - other side of me -->
-                    <div id="aboutOtherContainer" class="text-container">
-                        <p role="text">Also experienced in coding
-                            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" role="link">
-                                <img src="./images/icons/JS-icon.png" alt="JavaScript icon">JavaScript
-                            </a>,
-                            <a href="https://www.w3schools.com/css/" target="_blank" role="link">
-                                <img src="./images/icons/CSS-icon.png" alt="CSS icon">CSS
-                            </a>,
-                            <a href="https://www.mongodb.com/" target="_blank" role="link">
-                                <img src="./images/icons/MongoDB-icon.png" alt="MongoDB icon">MongoDB
-                            </a>,
-                            <a href="https://reactjs.org/" target="_blank" role="link">
-                                <img src="./images/icons/React-icon.png" alt="ReactJS icon">ReactJS
-                            </a>, and
-                            <a href="https://nodejs.org/en/about/" target="_blank" role="link">
-                                <img src="./images/icons/nodeJS-icon.png" alt="NodeJS icon">NodeJS
-                            </a>. He also enjoys making a difference in his community through volunteering at charitable organizations.
-                        </p>
-                    </div>
+              <!-- sub-sub-sub container - Link to live project -->
+              <div>
+                <a
+                  class="live"
+                  href="http://proplayersfoundation.net/"
+                  target="_blank"
+                  role="link"
+                  >Live</a
+                >
+              </div>
             </div>
-        </section>
+          </div>
 
-        <!-- projects section -->
-        <section id="projectSection">
-            <h3 role="heading"><img src="images/icons/projects-icon.png" alt="Projects icon">Projects</h3>
+          <!-- sub container - project 3 -->
+          <div class="project" id="ataNote">
+            <!-- sub-sub container - project description -->
+            <div class="text-container">
+              <h4>ataNote</h4>
+              <p role="text">
+                ataNote is a responsive notebook single-page app that allows the
+                users to make quick changes.
+              </p>
+              <p role="text">
+                Skills and tools implemented:
+                <a
+                  href="https://www.w3schools.com/html/html_intro.asp"
+                  target="_blank"
+                  role="link"
+                >
+                  <img
+                    src="./images/icons/HTML-icon.png"
+                    alt="HTML icon"
+                  />HTML </a
+                >,
+                <a
+                  href="https://www.w3schools.com/css/"
+                  target="_blank"
+                  role="link"
+                >
+                  <img
+                    src="./images/icons/CSS-icon.png"
+                    alt="CSS icon"
+                  />CSS </a
+                >,
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                  target="_blank"
+                  role="link"
+                >
+                  <img
+                    src="./images/icons/JS-icon.png"
+                    alt="JavaScript icon"
+                  />JavaScript </a
+                >,
+                <a href="https://jquery.com/" target="_blank" role="link">
+                  <img
+                    src="./images/icons/JQuery-icon.png"
+                    alt="jQuery icon"
+                  />jQuery </a
+                >,
+                <a
+                  href="https://hackernoon.com/what-is-ui-ux-design-1f01e9dbbf02"
+                  target="_blank"
+                  role="link"
+                  >UI/UX design</a
+                >,
+                <a
+                  href="https://nodejs.org/en/about/"
+                  target="_blank"
+                  role="link"
+                >
+                  <img
+                    src="./images/icons/nodeJS-icon.png"
+                    alt="Node JS icon"
+                  />NodeJS </a
+                >,
+                <a href="https://expressjs.com/" target="_blank" role="link"
+                  >ExpressJS</a
+                >,
+                <a href="https://www.mongodb.com/" target="_blank" role="link">
+                  <img
+                    src="./images/icons/MongoDB-icon.png"
+                    alt="MongoDB icon"
+                  />MongoDB </a
+                >,
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Glossary/REST"
+                  target="_blank"
+                  role="link"
+                  >REST API</a
+                >,
+                <a href="https://mlab.com/" target="_blank" role="link">mLab</a
+                >, and
+                <a
+                  href="https://www.w3schools.com/html/html_responsive.asp"
+                  target="_blank"
+                  role="link"
+                  >responsive web design</a
+                >
+              </p>
 
-            <!-- main container -->
-            <div class="main-container">
-
-                <!-- sub container - project 1 -->
-                <div class="project" id="gantt">
-
-                    <!-- sub-sub container - project description -->
-                    <div class="text-container">
-                        <h4>Gantt Project Management</h4>
-                        <p role="text">Gantt is a single-page project management software built to expedite the visual representation of a project plan.</p>
-                        <p role="text">Skills and tools implemented:
-                            <a href="https://www.w3schools.com/html/html_intro.asp" target="_blank" role="link">
-                                <img src="./images/icons/HTML-icon.png" alt="HTML icon">HTML
-                            </a>,
-                            <a href="https://www.w3schools.com/css/" target="_blank" role="link">
-                                <img src="./images/icons/CSS-icon.png" alt="CSS icon">CSS
-                            </a>,
-                            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" role="link">
-                                <img src="./images/icons/JS-icon.png" alt="JavaScript icon">JavaScript
-                            </a>,
-                            <a href="https://jquery.com/" target="_blank" role="link">
-                                <img src="./images/icons/JQuery-icon.png" alt="jQuery icon">jQuery
-                            </a>,
-                            <a href="https://hackernoon.com/what-is-ui-ux-design-1f01e9dbbf02" target="_blank" role="link">UI/UX design</a>,
-                            <a href="https://reactjs.org/" target="_blank" role="link">
-                                <img src="./images/icons/React-icon.png" alt="React JS icon">ReactJS
-                            </a>,
-                            <a href="https://nodejs.org/en/about/" target="_blank" role="link">
-                                <img src="./images/icons/nodeJS-icon.png" alt="Node JS icon">NodeJS
-                            </a>,
-                            <a href="https://expressjs.com/" target="_blank" role="link">ExpressJS</a>,
-                            <a href="https://www.mongodb.com/" target="_blank" role="link">
-                                <img src="./images/icons/MongoDB-icon.png" alt="MongoDB icon">MongoDB
-                            </a>,
-                            <a href="https://developer.mozilla.org/en-US/docs/Glossary/REST" target="_blank" role="link">REST API</a>,
-                            <a href="https://mlab.com/" target="_blank" role="link">mLab</a>, and
-                            <a href="https://www.w3schools.com/html/html_responsive.asp" target="_blank" role="link">responsive web design</a>
-                        </p>
-
-                        <!-- sub-sub-sub container - Link to live project and GitHub -->
-                        <div>
-                            <a class="live" href="https://fucata55.github.io/gantt-project-management-full-stack-capstone-react/build" target="_blank" role="link">Live</a> |
-                            <a class="code" href="https://github.com/fucata55/gantt-project-management-full-stack-capstone-react" target="_blank" role="link">Code</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- sub container - project 2 -->
-                <div class="project" id="ppf">
-                    
-                    <!-- sub-sub container - project description -->
-                    <div class="text-container">
-                        <h4>Pro Players Foundation</h4>
-                        <p role="text">Pro Players Foundation is a corporate website to introduce its activities, collect donations, and more</p>
-                        <p role="text">Skills and tools implemented:
-                            <a href="https://wordpress.org/" target="_blank" role="link">
-                                <img src="./images/icons/WordPress-icon.png" alt="WordPress icon">WordPress
-                            </a> and
-                            <a href="https://hackernoon.com/what-is-ui-ux-design-1f01e9dbbf02" target="_blank" role="link">UI/UX design</a>
-                        </p>
-
-                        <!-- sub-sub-sub container - Link to live project -->
-                        <div>
-                            <a class="live" href="http://proplayersfoundation.net/" target="_blank" role="link">Live</a>
-                        </div>
-                    </div>
-                </div>
-            
-
-                <!-- sub container - project 3 -->
-                <div class="project" id="ataNote">
-
-                    <!-- sub-sub container - project description -->
-                    <div class="text-container">
-                        <h4>ataNote</h4>
-                        <p role="text">ataNote is a responsive notebook single-page app that allows the users to make quick changes.</p>
-                        <p role="text">Skills and tools implemented:
-                            <a href="https://www.w3schools.com/html/html_intro.asp" target="_blank" role="link">
-                                <img src="./images/icons/HTML-icon.png" alt="HTML icon">HTML
-                            </a>,
-                            <a href="https://www.w3schools.com/css/" target="_blank" role="link">
-                                <img src="./images/icons/CSS-icon.png" alt="CSS icon">CSS
-                            </a>,
-                            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" role="link">
-                                <img src="./images/icons/JS-icon.png" alt="JavaScript icon">JavaScript
-                            </a>,
-                            <a href="https://jquery.com/" target="_blank" role="link">
-                                <img src="./images/icons/JQuery-icon.png" alt="jQuery icon">jQuery
-                            </a>,
-                            <a href="https://hackernoon.com/what-is-ui-ux-design-1f01e9dbbf02" target="_blank" role="link">UI/UX design</a>,
-                            <a href="https://nodejs.org/en/about/" target="_blank" role="link">
-                                <img src="./images/icons/nodeJS-icon.png" alt="Node JS icon">NodeJS
-                            </a>,
-                            <a href="https://expressjs.com/" target="_blank" role="link">ExpressJS</a>,
-                            <a href="https://www.mongodb.com/" target="_blank" role="link">
-                                <img src="./images/icons/MongoDB-icon.png" alt="MongoDB icon">MongoDB
-                            </a>,
-                            <a href="https://developer.mozilla.org/en-US/docs/Glossary/REST" target="_blank" role="link">REST API</a>,
-                            <a href="https://mlab.com/" target="_blank" role="link">mLab</a>, and
-                            <a href="https://www.w3schools.com/html/html_responsive.asp" target="_blank" role="link">responsive web design</a>
-                        </p>
-
-                        <!-- sub-sub-sub container - Link to live project and GitHub -->
-                        <div>
-                            <a class="Live" href="https://atanote-node-capstone.herokuapp.com/" target="_blank" role="link">Live</a>
-                            |
-                            <a class="code" href="https://github.com/fucata55/ataNote-node-capstone" target="_blank" role="link">Code</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- sub container - project 4 -->
-                <div class="project" id="exploRestaurant">
-
-                    <!-- sub-sub container - project description -->
-                    <div class="text-container">
-                        <h4>ExploRestaurant</h4>
-                        <p role="text">ExploRestaurant is a seamless API-driven single-page app that satisfies users' craving
-                            for restaurant discovery.
-                        </p>
-                        <p role="text">Skills and tools implemented:
-                            <a href="https://www.w3schools.com/html/html_intro.asp" target="_blank" role="link">
-                                <img src="./images/icons/HTML-icon.png" alt="HTML icon">HTML
-                            </a>,
-                            <a href="https://www.w3schools.com/css/" target="_blank" role="link">
-                                <img src="./images/icons/CSS-icon.png" alt="CSS icon">CSS
-                            </a>,
-                            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" role="link">
-                                <img src="./images/icons/JS-icon.png" alt="JavaScript icon">JavaScript
-                            </a>,
-                            <a href="https://jquery.com/" target="_blank" role="link">
-                                <img src="./images/icons/JQuery-icon.png" alt="jQuery icon">jQuery
-                            </a>,
-                            <a href="https://developers.google.com/youtube/" target="_blank" role="link">
-                                <img src="./images/icons/YouTube-icon.png" alt="YouTube icon">Youtube API
-                            </a>,
-                            <a href="https://developers.zomato.com/api" target="_blank" role="link">Zomato API</a>,
-                            <a href="https://hackernoon.com/what-is-ui-ux-design-1f01e9dbbf02" target="_blank" role="link">UI/UX design</a>,
-                            <a href="https://developer.mozilla.org/en-US/docs/Glossary/REST" target="_blank" role="link">REST API</a>,
-                            <a href="https://www.w3schools.com/html/html_responsive.asp" target="_blank" role="link">responsive web design</a>
-                        </p>
-
-                        <!-- sub-sub-sub container - Link to live project and GitHub -->
-                        <div>
-                            <a class="live" href="https://fucata55.github.io/explorestaurant-api-capstone/" target="_blank" role="link">Live</a>
-                            |
-                            <a class="code" href="https://github.com/fucata55/explorestaurant-api-capstone" target="_blank" role="link">Code</a>
-                        </div>
-                    </div>
-                </div>
+              <!-- sub-sub-sub container - Link to live project and GitHub -->
+              <div>
+                <a
+                  class="Live"
+                  href="https://atanote-node-capstone.herokuapp.com/"
+                  target="_blank"
+                  role="link"
+                  >Live</a
+                >
+                |
+                <a
+                  class="code"
+                  href="https://github.com/fucata55/ataNote-node-capstone"
+                  target="_blank"
+                  role="link"
+                  >Code</a
+                >
+              </div>
             </div>
+          </div>
 
-        </section>
+          <!-- sub container - project 4 -->
+          <div class="project" id="exploRestaurant">
+            <!-- sub-sub container - project description -->
+            <div class="text-container">
+              <h4>ExploRestaurant</h4>
+              <p role="text">
+                ExploRestaurant is a seamless API-driven single-page app that
+                satisfies users' craving for restaurant discovery.
+              </p>
+              <p role="text">
+                Skills and tools implemented:
+                <a
+                  href="https://www.w3schools.com/html/html_intro.asp"
+                  target="_blank"
+                  role="link"
+                >
+                  <img
+                    src="./images/icons/HTML-icon.png"
+                    alt="HTML icon"
+                  />HTML </a
+                >,
+                <a
+                  href="https://www.w3schools.com/css/"
+                  target="_blank"
+                  role="link"
+                >
+                  <img
+                    src="./images/icons/CSS-icon.png"
+                    alt="CSS icon"
+                  />CSS </a
+                >,
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                  target="_blank"
+                  role="link"
+                >
+                  <img
+                    src="./images/icons/JS-icon.png"
+                    alt="JavaScript icon"
+                  />JavaScript </a
+                >,
+                <a href="https://jquery.com/" target="_blank" role="link">
+                  <img
+                    src="./images/icons/JQuery-icon.png"
+                    alt="jQuery icon"
+                  />jQuery </a
+                >,
+                <a
+                  href="https://developers.google.com/youtube/"
+                  target="_blank"
+                  role="link"
+                >
+                  <img
+                    src="./images/icons/YouTube-icon.png"
+                    alt="YouTube icon"
+                  />Youtube API </a
+                >,
+                <a
+                  href="https://developers.zomato.com/api"
+                  target="_blank"
+                  role="link"
+                  >Zomato API</a
+                >,
+                <a
+                  href="https://hackernoon.com/what-is-ui-ux-design-1f01e9dbbf02"
+                  target="_blank"
+                  role="link"
+                  >UI/UX design</a
+                >,
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Glossary/REST"
+                  target="_blank"
+                  role="link"
+                  >REST API</a
+                >,
+                <a
+                  href="https://www.w3schools.com/html/html_responsive.asp"
+                  target="_blank"
+                  role="link"
+                  >responsive web design</a
+                >
+              </p>
 
-        <!-- skills section -->
-        <section id="skillSection">
-            <h3 role="heading"><img src="images/icons/skills-icon.png" alt="Skills icon">Skills and Tools</h3>
-
-            <!-- main container -->
-            <div class="main-container">
-                <figure>
-                    <a href="https://www.w3schools.com/html/html_intro.asp" target="_blank" role="link">
-                        <img src="./images/HTML-logo.png" alt="link to HTML description" role="img">
-                        <figcaption>HTML</figcaption>
-                    </a>
-                </figure>
-                <figure>
-                    <a href="https://www.w3schools.com/css/" target="_blank" role="link">
-                        <img src="./images/CSS-logo.png" alt="link to CSS description" role="img">
-                    </a>
-                    <figcaption>CSS</figcaption>
-                </figure>
-                <figure>
-                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" role="link">
-                        <img src="./images/JS-logo.png" alt="link to JavaScript description" role="img">
-                    </a>
-                    <figcaption>JavaScript</figcaption>
-                </figure>
-                <figure>
-                    <a href="https://jquery.com/" target="_blank" role="link">
-                        <img src="./images/JQuery-logo.png" alt="link to jQuery description" role="img">
-                    </a>
-                    <figcaption>jQuery</figcaption>
-                </figure>
-                <figure>
-                    <a href="https://reactjs.org/" target="_blank" role="link">
-                        <img src="./images/React-logo.png" alt="link to React JS description" role="img">
-                    </a>
-                    <figcaption>ReactJS</figcaption>
-                </figure>
-                <figure>
-                    <a href="https://nodejs.org/en/about/" target="_blank" role="link">
-                        <img src="./images/NodeJS-logo.png" alt="link to Node JS description" role="img">
-                    </a>
-                    <figcaption>NodeJS</figcaption>
-                </figure>
-                <figure>
-                    <a href="https://www.mongodb.com/" target="_blank" role="link">
-                        <img src="./images/MongoDB-logo.png" alt="link to MongoDB description" role="img">
-                    </a>
-                    <figcaption>MongoDB</figcaption>
-                </figure>
-                <figure>
-                    <a href="https://kotlinlang.org/" target="_blank" role="link">
-                        <img src="./images/Kotlin-logo.png" alt="link to Kotlin description" role="img">
-                    </a>
-                    <figcaption>Kotlin</figcaption>
-                </figure>
-                <figure>
-                    <a href="https://www.jetbrains.com/idea/" target="_blank" role="link">
-                        <img src="./images/IntelliJ-logo.png" alt="link to IntelliJ description" role="img">
-                    </a>
-                    <figcaption>IntelliJ IDEA</figcaption>
-                </figure>
-                <figure>
-                    <a href="https://tornadofx.io/" , target="_blank" role="link">
-                        <img src="./images/TornadoFX-logo.png" alt="link to TornadoFX description" role="img">
-                    </a>
-                    <figcaption>TornadoFX</figcaption>
-                </figure>
-                <figure>
-                    <a class="contact-link" href="https://github.com/fucata55" target="_blank" role="link">
-                        <img src="./images/GitHub-logo.png" alt="link to GitHub description" role="img">
-                    </a>
-                    <figcaption>GitHub</figcaption>
-                </figure>
+              <!-- sub-sub-sub container - Link to live project and GitHub -->
+              <div>
+                <a
+                  class="live"
+                  href="https://fucata55.github.io/explorestaurant-api-capstone/"
+                  target="_blank"
+                  role="link"
+                  >Live</a
+                >
+                |
+                <a
+                  class="code"
+                  href="https://github.com/fucata55/explorestaurant-api-capstone"
+                  target="_blank"
+                  role="link"
+                  >Code</a
+                >
+              </div>
             </div>
+          </div>
+        </div>
+      </section>
 
-        </section>
+      <!-- skills section -->
+      <section id="skillSection">
+        <h3 role="heading">
+          <img src="images/icons/skills-icon.png" alt="Skills icon" />Skills and
+          Tools
+        </h3>
+
+        <!-- main container -->
+        <div class="main-container">
+          <figure>
+            <a
+              href="https://www.w3schools.com/html/html_intro.asp"
+              target="_blank"
+              role="link"
+            >
+              <img
+                src="./images/HTML-logo.png"
+                alt="link to HTML description"
+                role="img"
+              />
+              <figcaption>HTML</figcaption>
+            </a>
+          </figure>
+          <figure>
+            <a
+              href="https://www.w3schools.com/css/"
+              target="_blank"
+              role="link"
+            >
+              <img
+                src="./images/CSS-logo.png"
+                alt="link to CSS description"
+                role="img"
+              />
+            </a>
+            <figcaption>CSS</figcaption>
+          </figure>
+          <figure>
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+              target="_blank"
+              role="link"
+            >
+              <img
+                src="./images/JS-logo.png"
+                alt="link to JavaScript description"
+                role="img"
+              />
+            </a>
+            <figcaption>JavaScript</figcaption>
+          </figure>
+          <figure>
+            <a href="https://jquery.com/" target="_blank" role="link">
+              <img
+                src="./images/JQuery-logo.png"
+                alt="link to jQuery description"
+                role="img"
+              />
+            </a>
+            <figcaption>jQuery</figcaption>
+          </figure>
+          <figure>
+            <a href="https://reactjs.org/" target="_blank" role="link">
+              <img
+                src="./images/React-logo.png"
+                alt="link to React JS description"
+                role="img"
+              />
+            </a>
+            <figcaption>ReactJS</figcaption>
+          </figure>
+          <figure>
+            <a href="https://nodejs.org/en/about/" target="_blank" role="link">
+              <img
+                src="./images/NodeJS-logo.png"
+                alt="link to Node JS description"
+                role="img"
+              />
+            </a>
+            <figcaption>NodeJS</figcaption>
+          </figure>
+          <figure>
+            <a href="https://www.mongodb.com/" target="_blank" role="link">
+              <img
+                src="./images/MongoDB-logo.png"
+                alt="link to MongoDB description"
+                role="img"
+              />
+            </a>
+            <figcaption>MongoDB</figcaption>
+          </figure>
+          <figure>
+            <a href="https://kotlinlang.org/" target="_blank" role="link">
+              <img
+                src="./images/Kotlin-logo.png"
+                alt="link to Kotlin description"
+                role="img"
+              />
+            </a>
+            <figcaption>Kotlin</figcaption>
+          </figure>
+          <figure>
+            <a
+              href="https://www.jetbrains.com/idea/"
+              target="_blank"
+              role="link"
+            >
+              <img
+                src="./images/IntelliJ-logo.png"
+                alt="link to IntelliJ description"
+                role="img"
+              />
+            </a>
+            <figcaption>IntelliJ IDEA</figcaption>
+          </figure>
+          <figure>
+            <a href="https://tornadofx.io/" , target="_blank" role="link">
+              <img
+                src="./images/TornadoFX-logo.png"
+                alt="link to TornadoFX description"
+                role="img"
+              />
+            </a>
+            <figcaption>TornadoFX</figcaption>
+          </figure>
+          <figure>
+            <a
+              class="contact-link"
+              href="https://github.com/fucata55"
+              target="_blank"
+              role="link"
+            >
+              <img
+                src="./images/GitHub-logo.png"
+                alt="link to GitHub description"
+                role="img"
+              />
+            </a>
+            <figcaption>GitHub</figcaption>
+          </figure>
+        </div>
+      </section>
     </main>
     <footer role="complementary">
-        <div>
-            <a class="contact-link" href="https://github.com/fucata55" target="_blank" role="link">
-                <img src="images/icons/GitHub-icon.png" alt="Link to Stephen's GitHub" role="img">
-            </a>
-            <a class="contact-link" href="https://www.linkedin.com/in/stephen-liong-75252775/" target="_blank" role="link">
-                <img src="images/icons/LinkedIn-icon.png" alt="Link to  Stephen's LinkedIn" role="img">
-            </a>
-            <a class="contact-link" href="mailto:sliong325@gmail.com" target="_blank" role="link">
-                <img src="images/icons/Gmail-icon.png" alt="Link to Stephen's Gmail" role="img">
-            </a>
-            <a class="contact-link" href="https://twitter.com/sfucata" target="_blank" role="link">
-                <img src="images/icons/Twitter-icon.png" alt="Link to Stephen's Tweeter" role="img">
-            </a>
-        </div>
-        <p>Photography by <a href="https://annajoyblog.wordpress.com/" target="_blank">Anna Sandmeier</a></p>
-        <p>WaterColour splatter <a href="https://www.freepik.com/free-vector/watercolour-splatter-in-rainbow-colours_1215454.html">designed by Freepik</a></p>
+      <div>
+        <a
+          class="contact-link"
+          href="https://github.com/fucata55"
+          target="_blank"
+          role="link"
+        >
+          <img
+            src="images/icons/GitHub-icon.png"
+            alt="Link to Stephen's GitHub"
+            role="img"
+          />
+        </a>
+        <a
+          class="contact-link"
+          href="https://www.linkedin.com/in/stephen-liong-75252775/"
+          target="_blank"
+          role="link"
+        >
+          <img
+            src="images/icons/LinkedIn-icon.png"
+            alt="Link to  Stephen's LinkedIn"
+            role="img"
+          />
+        </a>
+        <a
+          class="contact-link"
+          href="mailto:sliong325@gmail.com"
+          target="_blank"
+          role="link"
+        >
+          <img
+            src="images/icons/Gmail-icon.png"
+            alt="Link to Stephen's Gmail"
+            role="img"
+          />
+        </a>
+        <a
+          class="contact-link"
+          href="https://www.codewars.com/users/fucata"
+          target="_blank"
+          role="link"
+        >
+          <img
+            src="images/icons/CodeWars-icon.png"
+            alt="Link to Stephen's Code Wars profile"
+            role="img"
+          />
+        </a>
+      </div>
+      <p>
+        Photographed by
+        <a href="https://annajoyblog.wordpress.com/" target="_blank"
+          >Anna Sandmeier</a
+        >
+      </p>
+      <p>
+        WaterColour splatter and Java Icon
+        <a
+          href="https://www.freepik.com/free-vector/watercolour-splatter-in-rainbow-colours_1215454.html"
+          >designed by Freepik</a
+        >
+      </p>
     </footer>
     <script src="app.js"></script>
-</body>
-
+  </body>
 </html>

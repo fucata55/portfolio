@@ -7,7 +7,7 @@ $breakpoint-cell: 411px
         width: 100%
         z-index: 2
         filter: brightness(80%)
-        
+
         @media screen and (max-width: $breakpoint-tablet)
             height: 100%
             top: 0%
@@ -97,7 +97,7 @@ nav
     display: flex
     justify-content: space-evenly
     text-align: center
-    
+
     li
         display: inline-block
         width: 60px
@@ -129,12 +129,12 @@ figure
         max-width: 130px
 
 figcaption
-    color: white
-    text-shadow: 0 0 5px black
+        color: white
+        text-shadow: 0 0 5px black
 
-footer 
+footer
     background-color: rgba(0, 0, 0, 0.6)
-    
+
     div
         display: flex
         justify-content: space-evenly
@@ -146,7 +146,6 @@ footer
         margin: 0px
     a
         text-decoration: underline
-
 
 .main-container
     grid-column: 2 / 3
@@ -202,7 +201,7 @@ footer
     background-position-y: center
     height: 100vh
     width: 100%
-    display: grid 
+    display: grid
     grid-template-columns: minmax(10px, auto) minmax(260px, 70%) minmax(10px, auto)
     grid-template-rows: auto minmax(260px, 50%) auto
     margin: auto
@@ -229,7 +228,7 @@ footer
     display: grid
     grid-template-columns: minmax(10px, auto) minmax(260px, 85%) minmax(10px, auto)
     grid-template-rows: minmax(100px, 15%) minmax(400px, 75%) auto
-    padding: 10px 
+    padding: 10px
 
     @media screen and (max-width: $breakpoint-tablet)  
         grid-template-rows: minmax(100px, 10%) minmax(400px, 75%) auto
@@ -242,7 +241,7 @@ footer
     h3
         @media screen and (max-width: $breakpoint-cell)
             display: none
-            
+
     .main-container
         display: grid
         grid-template-columns: 2fr 1fr 1fr
@@ -252,7 +251,7 @@ footer
         @media screen and (max-width: $breakpoint-tablet)  
             grid-template-columns: 2fr 3fr
             grid-template-rows: 3fr 2fr 2fr
-        
+
         @media screen and (max-width: $breakpoint-cell)
             grid-template-columns: 1fr
             grid-template-rows: 3fr 2fr 1fr 1fr
@@ -262,7 +261,7 @@ footer
             display: table
             height: 100%
             padding: 5%
-            color: white   
+            color: white
 
             @media screen and (max-width: $breakpoint-cell)
                 padding: 3%
@@ -270,7 +269,7 @@ footer
             p
                 display: table-cell
                 vertical-align: middle
- 
+
 #defaultPhoto
     height: 100%
 
@@ -280,7 +279,7 @@ footer
     @media screen and (max-width: $breakpoint-tablet) 
         grid-column: 1 / 3
         grid-row: 1 / 2
-       
+
     @media screen and (max-width: $breakpoint-cell)
         grid-column: 1 / 2
         grid-row: 1 / 2
@@ -288,29 +287,29 @@ footer
 #aboutSoftwareContainer
     grid-column: 2 / 4
     grid-row: 1 / 2
-    background-color: #019118
+    background-color: #0f9df5
 
     @media screen and (max-width: $breakpoint-tablet) 
         grid-column: 1 / 2
         grid-row: 2 / 4
-         
-    @media screen and (max-width: $breakpoint-cell)
-        grid-row: 2 / 3  
 
-#aboutBusinessContainer
+    @media screen and (max-width: $breakpoint-cell)
+        grid-row: 2 / 3
+
+#aboutFanContainer
     grid-column: 2
     grid-row: 2 / 3
     background-color: #633FBE
 
     @media screen and (max-width: $breakpoint-tablet) 
         grid-column: 2 / 3
-        grid-row: 2 / 3   
+        grid-row: 2 / 3
 
     @media screen and (max-width: $breakpoint-cell)
         grid-column: 1 / 2
         grid-row: 3 / 4
 
-#aboutOtherContainer
+#aboutOtherTechContainer
     grid-column: 3 / 4
     grid-row: 2 / 3
     background-color: #D34925
@@ -318,7 +317,7 @@ footer
     @media screen and (max-width: $breakpoint-tablet) 
         grid-column: 2 / 3
         grid-row: 3 / 4
-   
+
     @media screen and (max-width: $breakpoint-cell)
         grid-column: 1 / 2
         grid-row: 4 / 5
@@ -327,7 +326,7 @@ footer
     height: 100vh
     display: grid
     grid-template-columns: minmax(10px, auto) minmax(260px, 85%) minmax(10px, auto)
-    grid-template-rows: auto minmax(400px, 75%) auto 
+    grid-template-rows: auto minmax(400px, 75%) auto
 
     .main-container
         position: relative
@@ -336,7 +335,7 @@ footer
         background-color: rgba(0,0,0, 0.8)
         grid-column: 2 / 3
         visibility: hidden
-        
+
         @media screen and (max-width: $breakpoint-tablet)
             grid-row: 2 / 3
 
@@ -348,7 +347,6 @@ footer
     @media screen and (max-width: $breakpoint-tablet)
         top: 0%
         background-image: url("./images/Gantt-project-mobile.png")
-        
 
 #ppf
     background-image: url("./images/ProPlayersFoundation-project.png")
@@ -359,7 +357,6 @@ footer
         left: 0%
         top: 25%
         background-image: url("./images/ProPlayersFoundation-project-mobile.png")
-
 
 #ataNote
     background-image: url("./images/ataNote-project.png")
@@ -386,6 +383,6 @@ footer
     display: grid
     grid-template-columns: minmax(10px, auto) minmax(260px, 85%) minmax(10px, auto)
     grid-template-rows: minmax(100px, 10%) minmax(auto, 75%) auto
-    
+
     .main-container
         padding-top: 10%
