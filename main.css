@@ -1,125 +1,125 @@
 /*CSS Reset*/
 
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 18px;
-    box-sizing: border-box;
-    -webkit-margin-before: 0px;
-    -webkit-margin-after: 0px;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
-    -webkit-padding-before: 0px;
-    -webkit-padding-after: 0px;
-    -webkit-padding-start: 0px;
-    -webkit-padding-end: 0px;
-    font-family: 'Merriweather', serif;
-    line-height: 165%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 18px;
+  box-sizing: border-box;
+  -webkit-margin-before: 0px;
+  -webkit-margin-after: 0px;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-before: 0px;
+  -webkit-padding-after: 0px;
+  -webkit-padding-start: 0px;
+  -webkit-padding-end: 0px;
+  font-family: "Merriweather", serif;
+  line-height: 165%;
 }
 
 section {
-    padding: 50px 50px;
+  padding: 50px 50px;
 }
 
 figure {
-    text-align: center;
+  text-align: center;
 }
 
 div,
 figure {
-    margin: 10px;
+  margin: 10px;
 }
 
 .slick-slide {
-    margin: 5px;
+  margin: 5px;
 }
 
-figure>p {
-    margin-top: 10px;
-    font-weight: 800;
+figure > p {
+  margin-top: 10px;
+  font-weight: 800;
 }
 
 a {
-    cursor: pointer;
-    text-decoration: none;
-    font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 600;
 }
 
-p>a {
-    color: #0ca5e6
+p > a {
+  color: #0ca5e6;
 }
 
 a:hover {
-    filter: brightness(85%)
+  filter: brightness(85%);
 }
 
 a:visited {
-    color: #0ca5e6
+  color: #0ca5e6;
 }
 
 h1 {
-    font-family: 'Archivo Narrow', sans-serif;
-    font-size: 100px;
-    font-weight: 900;
-    line-height: 100px;
+  font-family: "Archivo Narrow", sans-serif;
+  font-size: 100px;
+  font-weight: 900;
+  line-height: 100px;
 }
 
 h2 {
-    font-family: 'Archivo Narrow', sans-serif;
-    font-size: 70px;
-    line-height: 70px;
-    margin-bottom: 10px;
+  font-family: "Archivo Narrow", sans-serif;
+  font-size: 70px;
+  line-height: 70px;
+  margin-bottom: 10px;
 }
 
 h3 {
-    font-family: 'Archivo Narrow', sans-serif;
-    font-size: 30px;
-    margin-bottom: 35px;
+  font-family: "Archivo Narrow", sans-serif;
+  font-size: 30px;
+  margin-bottom: 35px;
 }
 
 h4 {
-    font-size: 22px;
+  font-size: 22px;
 }
 
 h5 {
-    font-size: 18px;
-    font-weight: 600;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 header {
-    text-align: center;
+  text-align: center;
 }
 
 footer {
-    text-align: center;
-    padding: 30px;
-    background-color: #fffaf0;
+  text-align: center;
+  padding: 30px;
+  background-color: #fffaf0;
 }
 
 /*Navigation desktop code starts here*/
 nav {
-    position: fixed;
-    z-index: 99;
-    width: 100%;
-    overflow: hidden;
-    background-color: #fff;
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  overflow: hidden;
+  background-color: #fff;
 }
 
 nav a {
-    float: left;
-    display: block;
-    height: 40px;
-    color: #000000;
-    text-align: center;
-    padding: 11px 16px;
-    text-decoration: none;
-    font-size: 1.02em;
+  float: left;
+  display: block;
+  height: 40px;
+  color: #000000;
+  text-align: center;
+  padding: 11px 16px;
+  text-decoration: none;
+  font-size: 1.02em;
 }
 
 nav a:hover {
-    background-color: #ffe4c696;
-    cursor: pointer;
+  background-color: #ffe4c696;
+  cursor: pointer;
 }
 
 /* .active {
@@ -127,128 +127,130 @@ nav a:hover {
 } */
 
 nav .icon {
-    display: none;
+  display: none;
 }
 /*Navigation code ends here*/
 
 .to-inline-block {
-    display: inline-block;
+  display: inline-block;
 }
 
 .description {
-    width: 575px;
-    vertical-align: top;
+  width: 575px;
+  vertical-align: top;
 }
 
 .contact-link {
-    margin: 0px 10px;
+  margin: 0px 10px;
 }
 
 .my-photo {
-    width: 200px;
-    border-radius: 10px;
+  width: 200px;
+  border-radius: 10px;
 }
 
 .project-image {
-    border-radius: 5px;
+  border-radius: 5px;
 }
 
 #landing {
-    background-color: #ffe4c6;
+  background-color: #ffe4c6;
 }
 
 #projects,
 #recommendations {
-    background-color: #ffe4c6;
+  background-color: #ffe4c6;
 }
 
 #aboutMe {
-    background-color: floralwhite;
+  background-color: floralwhite;
 }
 
-#landing>div {
-    margin-top: 10%;
-    margin-bottom: 10%;
+#landing > div {
+  margin-top: 10%;
+  margin-bottom: 10%;
 }
 
 #skills {
-    text-align: center;
-    background-color: floralwhite;
+  text-align: center;
+  background-color: floralwhite;
 }
 
-#skills>h3 {
-    text-align: left
+#skills > h3 {
+  text-align: left;
 }
 
 @media only screen and (max-width: 600px) {
-    nav a:not(:first-child) {display: none;}
-    nav a.icon {
-        float: right;
-        display: block;
-    }
-    nav.responsive .icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-    nav.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-    }
+  nav a:not(:first-child) {
+    display: none;
+  }
+  nav a.icon {
+    float: right;
+    display: block;
+  }
+  nav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  nav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
 }
 @media only screen and (max-width: 980px) {
-    * {
-        text-align: center;
-        font-size: 15px;
-    }
-    div {
-        margin: 5px 0px 0px 0px;
-    }
-    h1 {
-        font-size: 50px;
-        line-height: 60px;
-    }
-    h2 {
-        font-size: 35px;
-        line-height: 40px;
-    }
-    h3 {
-        font-size: 25px;
-    }
-    h4 {
-        font-size: 20px
-    }
-    h5 {
-        font-size: 16px;
-    }
-    section {
-        padding: 30px 10px;
-    }
-    figure>img {
-        width: 70%
-    }
-    .project-image {
-        width: 100%;
-        height: 100%;
-    }
-    .my-photo {
-        width: 80%
-    }
-    #skills>h3 {
-        text-align: center;
-    }
-    .description {
-        width: 95%;
-    }
-    .my-photo-container {
-        display: block;
-    }
-    .contact-link>img {
-        width: 30px;
-    }
-    .project-container>div {
-        margin: 10px 0px;
-        width: 100%;
-    }
+  * {
+    text-align: center;
+    font-size: 15px;
+  }
+  div {
+    margin: 5px 0px 0px 0px;
+  }
+  h1 {
+    font-size: 50px;
+    line-height: 60px;
+  }
+  h2 {
+    font-size: 35px;
+    line-height: 40px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  h5 {
+    font-size: 16px;
+  }
+  section {
+    padding: 30px 10px;
+  }
+  figure > img {
+    width: 70%;
+  }
+  .project-image {
+    width: 100%;
+    height: 100%;
+  }
+  .my-photo {
+    width: 80%;
+  }
+  #skills > h3 {
+    text-align: center;
+  }
+  .description {
+    width: 95%;
+  }
+  .my-photo-container {
+    display: block;
+  }
+  .contact-link > img {
+    width: 30px;
+  }
+  .project-container > div {
+    margin: 10px 0px;
+    width: 100%;
+  }
 }

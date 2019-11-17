@@ -348,7 +348,7 @@ footer a {
 #aboutSoftwareContainer {
   grid-column: 2/4;
   grid-row: 1/2;
-  background-color: #019118;
+  background-color: #0f9df5;
 }
 @media screen and (max-width: 768px) {
   #aboutSoftwareContainer {
@@ -362,37 +362,37 @@ footer a {
   }
 }
 
-#aboutBusinessContainer {
+#aboutFanContainer {
   grid-column: 2;
   grid-row: 2/3;
   background-color: #633FBE;
 }
 @media screen and (max-width: 768px) {
-  #aboutBusinessContainer {
+  #aboutFanContainer {
     grid-column: 2/3;
     grid-row: 2/3;
   }
 }
 @media screen and (max-width: 411px) {
-  #aboutBusinessContainer {
+  #aboutFanContainer {
     grid-column: 1/2;
     grid-row: 3/4;
   }
 }
 
-#aboutOtherContainer {
+#aboutOtherTechContainer {
   grid-column: 3/4;
   grid-row: 2/3;
   background-color: #D34925;
 }
 @media screen and (max-width: 768px) {
-  #aboutOtherContainer {
+  #aboutOtherTechContainer {
     grid-column: 2/3;
     grid-row: 3/4;
   }
 }
 @media screen and (max-width: 411px) {
-  #aboutOtherContainer {
+  #aboutOtherTechContainer {
     grid-column: 1/2;
     grid-row: 4/5;
   }
