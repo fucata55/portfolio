@@ -178,7 +178,7 @@ footer a {
 }
 
 .project {
-  width: 25%;
+  width: 33.33%;
   height: 100%;
   position: absolute;
   transition: width 1s, left 1s, z-index 0.5s;
@@ -191,7 +191,7 @@ footer a {
 @media screen and (max-width: 768px) {
   .project {
     width: 100%;
-    height: 25%;
+    height: 33.33%;
     transition: height 1s, top 1s, z-index 0.5s;
     grid-template-columns: 1fr;
     grid-template-rows: 4fr 3fr;
@@ -444,36 +444,9 @@ footer a {
   }
 }
 
-#ppf {
-  background-image: url("./images/ProPlayersFoundation-project.png");
-  left: 25%;
-}
-#ppf:hover {
-  left: 0%;
-  width: 100%;
-  z-index: 2;
-  filter: brightness(80%);
-}
-@media screen and (max-width: 768px) {
-  #ppf:hover {
-    height: 100%;
-    top: 0%;
-  }
-}
-#ppf:hover .text-container {
-  visibility: visible;
-}
-@media screen and (max-width: 768px) {
-  #ppf {
-    left: 0%;
-    top: 25%;
-    background-image: url("./images/ProPlayersFoundation-project-mobile.png");
-  }
-}
-
 #ataNote {
   background-image: url("./images/ataNote-project.png");
-  left: 50%;
+  left: 33.33%;
 }
 #ataNote:hover {
   left: 0%;
@@ -493,14 +466,14 @@ footer a {
 @media screen and (max-width: 768px) {
   #ataNote {
     left: 0%;
-    top: 50%;
+    top: 33.33%;
     background-image: url("./images/ataNote-project-mobile.png");
   }
 }
 
 #exploRestaurant {
   background-image: url("./images/ExploRestaurant-project.png");
-  left: 75%;
+  left: 66.66%;
 }
 #exploRestaurant:hover {
   left: 0%;
@@ -520,7 +493,7 @@ footer a {
 @media screen and (max-width: 768px) {
   #exploRestaurant {
     left: 0%;
-    top: 75%;
+    top: 66.66%;
     background-image: url("./images/ExploRestaurant-project-mobile.png");
   }
 }
