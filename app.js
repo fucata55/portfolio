@@ -5,12 +5,9 @@ for (let i = 0; i < navItem.length; i++) {
   let section;
   switch (i) {
     case 0:
-      section = document.getElementById("heroSection");
-      break;
-    case 1:
       section = document.getElementById("aboutSection");
       break;
-    case 2:
+    case 1:
       section = document.getElementById("projectSection");
       break;
     case 3:
